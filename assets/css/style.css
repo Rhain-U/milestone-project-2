@@ -1,0 +1,23 @@
+/**Google fonts**/
+@import url('https://fonts.googleapis.com/css2?family=Flavors&display=swap');
+
+h1,h2 {
+    font-family: "Flavors", sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: green;    
+}
+
+.rules
+{
+    font-family: "Flavors", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    display:flex;
+    justify-content: center;
+    color: green;
+}
