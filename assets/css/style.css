@@ -7,6 +7,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 body {
     background-image: url(../images/avo-background.jpg);
     background-size: cover;
@@ -79,6 +85,7 @@ h2 {
         display: flex;
         flex-wrap: wrap;
         justify-self: center;
+        ;
     
 }
 
@@ -94,7 +101,7 @@ h2 {
     display: inline-flex;
     font-family: "Flavors", sans-serif;
     font-size: 20px;
-    margin-left: 100px;
+    margin-left: 70px;
 }
 
 #score-title h2 {
@@ -106,7 +113,7 @@ h2 {
      justify-content: right;
     font-family: "Flavors", sans-serif;
     font-size: 20px;
-    margin-left: 650px;
+    margin-left: 620px;
 }
 
 #time-title h2 {
