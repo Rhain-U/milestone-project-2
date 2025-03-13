@@ -118,3 +118,11 @@ h2 {
 #time-title h2 {
   font-size: 40px;
 }
+
+
+.good-avo {
+    background-image: url(../images/good-avo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
