@@ -124,5 +124,13 @@ h2 {
     background-image: url(../images/good-avo.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-color: black;
+    
+    
+}
+.bad-avo {
+    background-image: url(../images/bad-avo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     
 }
