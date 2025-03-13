@@ -47,7 +47,7 @@ squares.forEach(square => {
     });
 });
 
-/**function to move the Avo's to a different square every second */ 
+/**function to move the Avo's to a different square every few seconds */ 
 
 function moveBadAvo() {
   timerId = setInterval(addBadMole, 1000); // 3000 milliseconds, 3 seconds
@@ -55,6 +55,19 @@ function moveBadAvo() {
 moveBadAvo();
 
 function moveGoodAvo() {
-    timerId = setInterval(addGoodMole, 1000); // 3000 milliseconds, 3 seconds
+    timerId = setInterval(addGoodMole, 500); // 3000 milliseconds, 3 seconds
   }
 
+  //* Function to count down the time left */
+
+  timerId = setInterval(countDown, 1000);
+  
+function countDown() {
+    currentTime--;
+    timeLeft.textContent = currentTime;
+
+    if (currentTime === 0) {
+        clearInterval(timerId);
+        alert('Game Over! Your final score is ' + result);
+    } 
+}
