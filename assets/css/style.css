@@ -120,16 +120,16 @@ h2 {
 }
 
 
-.good-avo {
-    background-image: url(../images/good-avo.jpg);
+.good-mole {
+    background-image: url(../images/good-mole.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-color: black;
     
     
 }
-.bad-avo {
-    background-image: url(../images/bad-avo.jpg);
+.bad-mole {
+    background-image: url(../images/bad-mole.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     
