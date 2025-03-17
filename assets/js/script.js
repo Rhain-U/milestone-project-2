@@ -16,9 +16,12 @@ let hitPositionCorrect = null;
 let hitPositionWrong = null;
 let gameInterval = null;
 let timerId = null;
+
+
 gameScreen.style.display = "none";
 resultScreen.style.display = "none";
 restartButton.style.display = "none";
+
 /** Start Game */
 startGameButton.addEventListener("click", () => {
   menuScreen.style.display = "none";
@@ -46,8 +49,8 @@ function addBadMole() {
   squares.forEach((square) => square.classList.remove("bad-mole"));
   let randomSquare = squares[Math.floor(Math.random() * squares.length)];
   randomSquare.classList.add("bad-mole");
+
   hitPositionCorrect = randomSquare.id;
-  
 }
 /** Function to add good mole */
 function addGoodMole() {
@@ -56,6 +59,7 @@ function addGoodMole() {
   randomSquare.classList.add("good-mole");
   hitPositionWrong = randomSquare.id;
 }
+
 /** Move bad moles */
 function moveBadMole() {
   if (gameInterval) clearInterval(gameInterval);
@@ -64,7 +68,6 @@ function moveBadMole() {
 /** Move good moles */
 function moveGoodMole() {
   setInterval(addGoodMole, 2000);
-
 }
 /** Score update */
 squares.forEach((square) => {
@@ -73,7 +76,7 @@ squares.forEach((square) => {
       result++;
       scoreDisplay.textContent = result;
       hitPositionCorrect = null;
-        splatterSound.play();
+      splatterSound.play();
     }
     if (square.id === hitPositionWrong) {
       message = `
@@ -88,7 +91,6 @@ squares.forEach((square) => {
     }
   });
 });
-
 
 /** Countdown Timer */
 function countDown() {
@@ -118,5 +120,5 @@ function endGame(message) {
  */
 function restartTheGame() {
   window.location.reload();
-  splatterSound.play(); 
+  splatterSound.play();
 }
