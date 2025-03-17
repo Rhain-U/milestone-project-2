@@ -30,11 +30,13 @@ function startGame() {
   currentTime = 60;
   scoreDisplay.textContent = result;
   timeLeft.textContent = currentTime;
+
   // Play sound
   splatterSound.play();
   // Start moving moles
   moveBadMole();
   moveGoodMole();
+
   // Start countdown
   if (timerId) clearInterval(timerId);
   timerId = setInterval(countDown, 1000);
@@ -45,6 +47,7 @@ function addBadMole() {
   let randomSquare = squares[Math.floor(Math.random() * squares.length)];
   randomSquare.classList.add("bad-mole");
   hitPositionCorrect = randomSquare.id;
+  
 }
 /** Function to add good mole */
 function addGoodMole() {
@@ -56,11 +59,12 @@ function addGoodMole() {
 /** Move bad moles */
 function moveBadMole() {
   if (gameInterval) clearInterval(gameInterval);
-  gameInterval = setInterval(addBadMole, 2000);
+  gameInterval = setInterval(addBadMole, 1000);
 }
 /** Move good moles */
 function moveGoodMole() {
-  setInterval(addGoodMole, 1000);
+  setInterval(addGoodMole, 2000);
+
 }
 /** Score update */
 squares.forEach((square) => {
@@ -69,6 +73,7 @@ squares.forEach((square) => {
       result++;
       scoreDisplay.textContent = result;
       hitPositionCorrect = null;
+        splatterSound.play();
     }
     if (square.id === hitPositionWrong) {
       message = `
@@ -79,9 +84,12 @@ squares.forEach((square) => {
             <p class =" game-over" >Maybe you can do a lot better next time!</p>
             `;
       endGame(message);
+      splatterSound.play();
     }
   });
 });
+
+
 /** Countdown Timer */
 function countDown() {
   currentTime--;
@@ -110,4 +118,5 @@ function endGame(message) {
  */
 function restartTheGame() {
   window.location.reload();
+  splatterSound.play(); 
 }
