@@ -6,6 +6,7 @@ const timeLeft = document.querySelector('#time-left');
 const score = document.querySelector('#score');
 const splatter =document.getElementById('splatter');
 
+
 let result = 0;
 let currentTime = 60
 let hitPosition; 
@@ -14,20 +15,7 @@ let timerId = null;
 
 /**Game start */
 
-startGame.addEventListener('click', startGame);
 
-function startGame() {
-    setTimeout(() => {
-        gamePlay();
-    }, 1000);
-        /**Splatter sound efects */
-       getElementById('splatter').play();   
-    
-}
-
-startGame();    
-
-   
 /**function to add good mole to random square */
 
 function addBadMole() {
