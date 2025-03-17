@@ -17,6 +17,8 @@ body {
   background-image: url(../images/avo-background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  overflow: hidden;
+  cursor: none;
 }
 h1 {
   font-family: "Flavors", sans-serif;
@@ -174,4 +176,11 @@ h2 {
   left: 100px;
   background-image: url(../images/mallet.png);
   background-size: 100% 100%;
+  transform: translate(-30%, -30%);
+  transition: transform 0.1s;
+  pointer-events: none;
+}
+
+.cursor.active {
+  transform: translate(-20%, -20%) rotate(-45deg);
 }

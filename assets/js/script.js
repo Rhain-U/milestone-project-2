@@ -9,6 +9,22 @@ const scoreDisplay = document.querySelector("#score");
 const splatterSound = document.getElementById("splatter");
 const resultScreen = document.getElementById("result-screen");
 const endGameResult = document.getElementById("end-game-result");
+const cursor = document.querySelector(".cursor");
+
+/** Cursor movement (Credited from Angle Brace video) mentioned in read me */
+window.addEventListener("mousemove", (e) => {
+  cursor.style.top = e.pageY + "px";
+  cursor.style.left = e.pageX + "px";
+});
+
+window.addEventListener("mousedown", () => {
+  cursor.classList.add("active");
+});
+
+window.addEventListener("mouseup", () => {
+  cursor.classList.remove("active");
+});
+
 
 let result = 0;
 let currentTime = 60;
@@ -16,7 +32,6 @@ let hitPositionCorrect = null;
 let hitPositionWrong = null;
 let gameInterval = null;
 let timerId = null;
-
 
 gameScreen.style.display = "none";
 resultScreen.style.display = "none";
@@ -122,3 +137,4 @@ function restartTheGame() {
   window.location.reload();
   splatterSound.play();
 }
+
