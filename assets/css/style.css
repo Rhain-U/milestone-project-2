@@ -121,7 +121,7 @@ h2 {
 
 
 .good-mole {
-    background-image: url(../images/good-mole.jpg);
+    background-image: url(../images/good-mole.jpg) alt="An image of the good mole"; 
     background-size: cover;
     background-repeat: no-repeat;
     background-color: black;
@@ -129,7 +129,7 @@ h2 {
     
 }
 .bad-mole {
-    background-image: url(../images/bad-mole.jpg);
+    background-image: url(../images/bad-mole.jpg) alt="An image of the bad mole";
     background-size: cover;
     background-repeat: no-repeat;
     
