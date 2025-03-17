@@ -134,3 +134,33 @@ h2 {
     background-repeat: no-repeat;
     
 }
+
+.game-over {
+  font-family: "Flavors", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(249, 228, 1, 0.949);
+  margin-bottom: 30px;
+}
+
+#restart-button {
+  font-family: "Flavors", sans-serif;
+  font-size: 60px;
+  font-weight: 400;
+  display: flex;
+  justify-self: center;
+  color: rgba(249, 228, 1, 0.949);
+  background: none;
+  box-shadow: 0 0 40px rgba(249, 228, 1, 0.949);
+  border: 2px solid rgba();
+  margin-top: 30px;
+  border-radius: 10px;
+  &:hover {
+    background-color: rgba(249, 228, 1, 0.949);
+    color: rgb(11, 98, 11);
+  }
+}

@@ -9,6 +9,7 @@ const scoreDisplay = document.querySelector("#score");
 const splatterSound = document.getElementById("splatter");
 const resultScreen = document.getElementById("result-screen");
 const endGameResult = document.getElementById("end-game-result");
+
 let result = 0;
 let currentTime = 60;
 let hitPositionCorrect = null;
@@ -71,9 +72,11 @@ squares.forEach((square) => {
     }
     if (square.id === hitPositionWrong) {
       message = `
-            <h2>And so it ends...</h2>
-            <p>You hit good mole, You bad, Your score is ${result},
-            I'm sure you can do a lot better than that!</p>
+            <h2>Game over...</h2>
+            <p class ="game-over" >You hit good mole, Your score is ${result}
+            </p>
+        
+            <p class =" game-over" >Maybe you can do a lot better next time!</p>
             `;
       endGame(message);
     }
@@ -88,9 +91,11 @@ function countDown() {
     clearInterval(gameInterval);
 
     message = `
-        <h2>And so it ends...</h2>
-        <p>You managed to last a minute, not bad at all. Your score 
-        was ${result}, Maybe you can do a lot better next time!</p>
+        <h2>Game over...</h2>
+        <p class ="game-over" >You managed to last a minute, not bad at all. Your score 
+        was ${result},</p>
+        
+        <p class =" game-over" >Maybe you can do a lot better next time!</p>
         `;
     endGame(message);
   }
