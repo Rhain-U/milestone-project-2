@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guac-A-Mole</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    
 </head>
 <body>
     <div class="wrapper">
@@ -50,7 +51,24 @@
             <h1>Guac-A-Mole</h1>
             <div id="end-game-result"></div>
             <button id="restart-button" onclick="restartTheGame();">Restart</button>
-        </div>
+            <br>
+            <!--Feedback section-->
+            <div id="feedback">
+                 <h3>Feedback</h3>
+            <p>Tell us what you think</p>
+            </div>
+            <div>
+                <br>
+                <div class="feedback-form">
+                <label for="form-type">Email Address</label>
+                <input type="email" class="form-control" id="input-1">
+                </div>
+                <div class="feedback-form">
+                    <label for="form-text-area" class="form-label">What could I do better?</label>
+                    <textarea class="form-control" id="textarea1" rows="3"></textarea>
+                </div>
+            </div>
+
         <!-- Audio -->
         <audio src="assets/sounds/splatter.mp3" id="splatter"></audio>
     </div>
@@ -58,4 +76,6 @@
     <div class="cursor"></div>
     <script src="assets/js/script.js"></script>
     </div>
+
+  
 </body>

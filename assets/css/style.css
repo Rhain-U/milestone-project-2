@@ -43,6 +43,19 @@ h2 {
   margin-bottom: 30px;
 }
 
+h3 {
+  font-family: "Flavors", sans-serif;
+  font-size: 40px;
+  font-weight: 200;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(249, 228, 1, 0.949);
+  margin-bottom: 10px;
+  margin-top:10px
+}
+
 #rules {
   font-family: "Flavors", sans-serif;
   font-size:20px;
@@ -167,6 +180,16 @@ h2 {
   &:hover {
     background-color: rgba(249, 228, 1, 0.949);
     color: rgb(11, 98, 11);
+  }
+
+  /*Feedback section */
+  #feedback {
+    text-align: center;
+    display: flex;
+    
+
+  }
+
   }
 
   /*styles for tablet sized screens*/
@@ -318,6 +341,16 @@ h2 {
     background-color: rgba(249, 228, 1, 0.949);
     color: rgb(11, 98, 11);
   }
+}
+
+/*Feedback section */
+#feedback h3 {
+  font-family: "Flavors", sans-serif;
+  font-size: 60px;
+  font-weight: 400;
+  display: flex;
+  justify-self: center;
+  color: rgba(249, 228, 1, 0.949);
 }
 }
 
@@ -471,6 +504,16 @@ h2 {
     color: rgb(11, 98, 11);
   }
 }
+
+/*Feedback section */
+#feedback h3 {
+  font-family: "Flavors", sans-serif;
+  font-size: 60px;
+  font-weight: 400;
+  display: flex;
+  justify-self: center;
+  color: rgba(249, 228, 1, 0.949);
+}
 }
 /*styles for  XXL screens*/
 @media screen and (min-width: 1400px) {
@@ -495,6 +538,17 @@ h1 {
 
 h2 {
   font-family: "Flavors", sans-serif;
+  font-size: 60px;
+  font-weight: 400;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(249, 228, 1, 0.949);
+  margin-bottom: 30px;
+}
+h3 {
+   font-family: "Flavors", sans-serif;
   font-size: 60px;
   font-weight: 400;
   text-align: center;
@@ -623,6 +677,16 @@ h2 {
   }
 }
 
+/*Feedback section */
+#feedback h3 {
+  font-family: "Flavors", sans-serif;
+  font-size: 60px;
+  font-weight: 400;
+  display: flex;
+  justify-self: center;
+  color: rgba(249, 228, 1, 0.949);
+}
+
 /*Cursor was taken from https://www.flaticon.com*/
 .cursor {
   height: 110px;
@@ -642,5 +706,4 @@ h2 {
 }
 }
 
-}
 
