@@ -104,6 +104,7 @@ function addGoodMole() {
 function moveBadMole() {
   if (gameInterval) clearInterval(gameInterval);
   gameInterval = setInterval(addBadMole, 1000);
+  
 }
 /** Move good moles */
 function moveGoodMole() {
