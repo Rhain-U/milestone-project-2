@@ -16,7 +16,7 @@
 body {
   background-image: url(../images/avo-background.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
+  height: 1000px;
   cursor: none;
 }
 h1 {
@@ -186,7 +186,7 @@ h3 {
   #feedback {
     text-align: center;
     display: flex;
-    
+
 
   }
 
