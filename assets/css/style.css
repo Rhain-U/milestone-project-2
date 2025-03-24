@@ -4,7 +4,7 @@
 /**General styles**/
 * {
   margin: 0;
-  padding: 0;
+  padding: 3px;
   box-sizing: border-box;
 }
 .wrapper {
@@ -33,7 +33,7 @@ h1 {
 
 h2 {
   font-family: "Flavors", sans-serif;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 200;
   text-align: center;
   display: flex;
@@ -97,6 +97,7 @@ h2 {
   display: flex;
   font-family: "Flavors", sans-serif;
   font-size: 30px;
+  font-weight: 200;
   text-align: center;
 }
 
@@ -117,14 +118,14 @@ h2 {
 }
 
 #time-title h2 {
-  font-size: 30px;
+  font-size: 40px;
 }
 
 #game-screen {
   display: block;
   justify-items: center;
   align-content: center;
-  max-height: 600px;
+  max-height: 800px;
 }
 
 .good-mole {
@@ -141,20 +142,20 @@ h2 {
 
 .game-over {
   font-family: "Flavors", sans-serif;
-  font-size: 40px;
-  font-weight: 400;
+  font-size: 30px;
+  font-weight: 200;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   color: rgba(249, 228, 1, 0.949);
-  margin-bottom: 30px;
+  padding: 5px;
 }
 
 #restart-button {
   font-family: "Flavors", sans-serif;
-  font-size: 60px;
-  font-weight: 400;
+  font-size: 40px;
+  font-weight: 200;
   display: flex;
   justify-self: center;
   color: rgba(249, 228, 1, 0.949);
