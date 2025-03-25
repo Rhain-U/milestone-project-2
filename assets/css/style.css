@@ -13,11 +13,29 @@
   margin: 0 auto;
 }
 
+  /*Cursor was taken from https://www.flaticon.com*/
+  .cursor {
+    height: 110px;
+    width: 100px;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    background-image: url(../images/mallet.png);
+    background-size: 100% 100%;
+    transform: translate(-30%, -30%);
+    transition: transform 0.1s;
+    pointer-events: none;
+  }
+
+  .cursor.active {
+    transform: translate(-20%, -20%) rotate(-45deg);
+  }
+
 body {
   background-image: url(../images/avo-background.jpg);
   background-size: cover;
   height: 1000px;
-  cursor: none;
+ 
 }
 h1 {
   font-family: "Flavors", sans-serif;
@@ -53,20 +71,36 @@ h3 {
   align-items: center;
   color: rgba(249, 228, 1, 0.949);
   margin-bottom: 10px;
-  margin-top:10px
+  margin-top: 10px;
+}
+
+p {
+  font-family: "Flavors", sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(249, 228, 1, 0.949);
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 #rules {
   font-family: "Flavors", sans-serif;
-  font-size:20px;
+  font-size: 30px;
   font-weight: 200;
   display: block;
   justify-self: center;
   text-align: center;
   color: rgba(249, 228, 1, 0.949);
+  background-color: black;
+  opacity: 0.8;
   list-style-type: none;
   margin-bottom: 10px;
-  width: 300px
+  width: 300px;
+  border-radius: 40px;
 }
 
 #start-button {
@@ -76,12 +110,13 @@ h3 {
   display: flex;
   justify-self: center;
   color: rgba(249, 228, 1, 0.949);
-  background: none;
+  background-color:black;
+  opacity: .8;
   box-shadow: 0 0 40px rgba(249, 228, 1, 0.949);
   border: 2px solid rgba();
   margin-top: 20px;
-  border-radius: 10px;
- }
+  border-radius: 40px;
+}
 
 /** Game board styles **/
 
@@ -127,7 +162,6 @@ h3 {
   font-family: "Flavors", sans-serif;
   font-size: 30px;
   font-weight: 200;
-  
 }
 
 #time-title h2 {
@@ -177,533 +211,536 @@ h3 {
   border: 2px solid rgba();
   margin-top: 30px;
   border-radius: 10px;
-  &:hover {
-    background-color: rgba(249, 228, 1, 0.949);
-    color: rgb(11, 98, 11);
+    &:hover {
+      background-color: rgba(249, 228, 1, 0.949);
+      color: rgb(11, 98, 11);
+    }
+  }
+  
+    /*Feedback section */
+   .form-label {
+    text-align: center;
+    display: flex;
+    font-family: "Flavors", sans-serif !important;
+    color: rgba(249, 228, 1, 0.949);
+    justify-content: center;
+    font-size: 20px;
+
+  }
+
+  .form-control {
+    display: flex;
+    justify-self: center;
+    width: 75%;
+  }
+
+  #textarea1 {
+    display: flex;
+    height: 100px;
+  }
+
+/*styles for tablet sized screens*/
+@media screen and (min-width: 728px) {
+  body {
+    background-image: url(../images/avo-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: none;
+  }
+  h1 {
+    font-family: "Flavors", sans-serif;
+    font-size: 80px;
+    font-weight: 400;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(249, 228, 1, 0.949);
+    margin-bottom: 30px;
+  }
+
+  h2 {
+    font-family: "Flavors", sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(249, 228, 1, 0.949);
+    margin-bottom: 30px;
+  }
+
+  #rules {
+    font-family: "Flavors", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    display: block;
+    justify-self: center;
+    text-align: center;
+    color: rgba(249, 228, 1, 0.949);
+    list-style-type: none;
+    margin-bottom: 30px;
+  }
+
+  #start-button {
+    font-family: "Flavors", sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    display: flex;
+    justify-self: center;
+    color: rgba(249, 228, 1, 0.949);
+    background: none;
+    box-shadow: 0 0 40px rgba(249, 228, 1, 0.949);
+    border: 2px solid rgba();
+    margin-top: 30px;
+    border-radius: 10px;
+    &:hover {
+      background-color: rgba(249, 228, 1, 0.949);
+      color: rgb(11, 98, 11);
+    }
+  }
+
+  /** Game board styles **/
+
+  .grid {
+    width: 600px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-self: center;
+    gap: 20px;
+  }
+
+  .square {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    background-color: rgb(128, 57, 24);
+    border-radius: 50%;
+    box-shadow: inset 0 10px 0 7px rgb(53, 21, 6);
+    box-shadow: inset 0 20px 20 15px rgba(0, 0, 0, 0.3) 0 0 5px 5px
+      rgba(0, 0, 0, 0.5);
+  }
+
+  #score-title {
+    display: inline-flex;
+    font-family: "Flavors", sans-serif;
+    font-size: 20px;
+    margin-left: 70px;
+  }
+
+  #score-title h2 {
+    font-size: 40px;
+  }
+
+  #time-title {
+    display: inline-flex;
+    justify-content: right;
+    font-family: "Flavors", sans-serif;
+    font-size: 20px;
+    margin-left: 850px;
+  }
+
+  #time-title h2 {
+    font-size: 40px;
+  }
+
+  .good-mole {
+    background-image: url(../images/good-mole.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+  }
+  .bad-mole {
+    background-image: url(../images/bad-mole.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .game-over {
+    font-family: "Flavors", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(249, 228, 1, 0.949);
+    margin-bottom: 30px;
+  }
+
+  #restart-button {
+    font-family: "Flavors", sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    display: flex;
+    justify-self: center;
+    color: rgba(249, 228, 1, 0.949);
+    background: none;
+    box-shadow: 0 0 40px rgba(249, 228, 1, 0.949);
+    border: 2px solid rgba();
+    margin-top: 30px;
+    border-radius: 10px;
+    &:hover {
+      background-color: rgba(249, 228, 1, 0.949);
+      color: rgb(11, 98, 11);
+    }
   }
 
   /*Feedback section */
-  #feedback {
+  #feedback-form {
+    font-family: "Flavors", sans-serif !important;
+    font-size: 60px !important;
+    font-weight: 400;
+    display: flex;
+    justify-self: center;
+    color: rgba(249, 228, 1, 0.949);
+  }
+
+  .form-label {
     text-align: center;
     display: flex;
-
+    font-family: "Flavors", sans-serif !important;
+    color: rgba(249, 228, 1, 0.949);
+    justify-content: center;
 
   }
-
-  }
-
-  /*styles for tablet sized screens*/
-@media screen and (min-width: 728px) {
-
-body {
-  background-image: url(../images/avo-background.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  cursor: none;
-}
-h1 {
-  font-family: "Flavors", sans-serif;
-  font-size: 80px;
-  font-weight: 400;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: rgba(249, 228, 1, 0.949);
-  margin-bottom: 30px;
-}
-
-h2 {
-  font-family: "Flavors", sans-serif;
-  font-size: 60px;
-  font-weight: 400;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: rgba(249, 228, 1, 0.949);
-  margin-bottom: 30px;
-}
-
-#rules {
-  font-family: "Flavors", sans-serif;
-  font-size: 30px;
-  font-weight: 400;
-  display: block;
-  justify-self: center;
-  text-align: center;
-  color: rgba(249, 228, 1, 0.949);
-  list-style-type: none;
-  margin-bottom: 30px;
-}
-
-#start-button {
-  font-family: "Flavors", sans-serif;
-  font-size: 60px;
-  font-weight: 400;
-  display: flex;
-  justify-self: center;
-  color: rgba(249, 228, 1, 0.949);
-  background: none;
-  box-shadow: 0 0 40px rgba(249, 228, 1, 0.949);
-  border: 2px solid rgba();
-  margin-top: 30px;
-  border-radius: 10px;
-  &:hover {
-    background-color: rgba(249, 228, 1, 0.949);
-    color: rgb(11, 98, 11);
-  }
-}
-
-/** Game board styles **/
-
-.grid {
-  width: 600px;
-  height: 600px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  justify-self: center;
-  gap: 20px;
-}
-
-.square {
-  width: 200px;
-  height: 200px;
-  border: 1px solid black;
-  background-color: rgb(128, 57, 24);
-  border-radius: 50%;
-  box-shadow: inset 0 10px 0 7px rgb(53, 21, 6);
-  box-shadow: inset 0 20px 20 15px rgba(0, 0, 0, 0.3) 0 0 5px 5px
-    rgba(0, 0, 0, 0.5);
-}
-
-#score-title {
-  display: inline-flex;
-  font-family: "Flavors", sans-serif;
-  font-size: 20px;
-  margin-left: 70px;
-}
-
-#score-title h2 {
-  font-size: 40px;
-}
-
-#time-title {
-  display: inline-flex;
-  justify-content: right;
-  font-family: "Flavors", sans-serif;
-  font-size: 20px;
-  margin-left: 850px;
-}
-
-#time-title h2 {
-  font-size: 40px;
-}
-
-.good-mole {
-  background-image: url(../images/good-mole.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: black;
-}
-.bad-mole {
-  background-image: url(../images/bad-mole.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.game-over {
-  font-family: "Flavors", sans-serif;
-  font-size: 40px;
-  font-weight: 400;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: rgba(249, 228, 1, 0.949);
-  margin-bottom: 30px;
-}
-
-#restart-button {
-  font-family: "Flavors", sans-serif;
-  font-size: 60px;
-  font-weight: 400;
-  display: flex;
-  justify-self: center;
-  color: rgba(249, 228, 1, 0.949);
-  background: none;
-  box-shadow: 0 0 40px rgba(249, 228, 1, 0.949);
-  border: 2px solid rgba();
-  margin-top: 30px;
-  border-radius: 10px;
-  &:hover {
-    background-color: rgba(249, 228, 1, 0.949);
-    color: rgb(11, 98, 11);
-  }
-}
-
-/*Feedback section */
-#feedback h3 {
-  font-family: "Flavors", sans-serif;
-  font-size: 60px;
-  font-weight: 400;
-  display: flex;
-  justify-self: center;
-  color: rgba(249, 228, 1, 0.949);
-}
 }
 
 /*stles for L screens*/
-@media screen and (min-width:992px) {
-
-body {
-  background-image: url(../images/avo-background.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  cursor: none;
-}
-h1 {
-  font-family: "Flavors", sans-serif;
-  font-size: 80px;
-  font-weight: 400;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: rgba(249, 228, 1, 0.949);
-  margin-bottom: 30px;
-}
-
-h2 {
-  font-family: "Flavors", sans-serif;
-  font-size: 60px;
-  font-weight: 400;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: rgba(249, 228, 1, 0.949);
-  margin-bottom: 30px;
-}
-
-#rules {
-  font-family: "Flavors", sans-serif;
-  font-size: 30px;
-  font-weight: 400;
-  display: block;
-  justify-self: center;
-  text-align: center;
-  color: rgba(249, 228, 1, 0.949);
-  list-style-type: none;
-  margin-bottom: 30px;
-}
-
-#start-button {
-  font-family: "Flavors", sans-serif;
-  font-size: 60px;
-  font-weight: 400;
-  display: flex;
-  justify-self: center;
-  color: rgba(249, 228, 1, 0.949);
-  background: none;
-  box-shadow: 0 0 40px rgba(249, 228, 1, 0.949);
-  border: 2px solid rgba();
-  margin-top: 30px;
-  border-radius: 10px;
-  &:hover {
-    background-color: rgba(249, 228, 1, 0.949);
-    color: rgb(11, 98, 11);
+@media screen and (min-width: 992px) {
+  body {
+    background-image: url(../images/avo-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: none;
   }
-}
-
-/** Game board styles **/
-
-.grid {
-  width: 600px;
-  height: 600px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  justify-self: center;
-  gap: 20px;
-}
-
-.square {
-  width: 200px;
-  height: 200px;
-  border: 1px solid black;
-  background-color: rgb(128, 57, 24);
-  border-radius: 50%;
-  box-shadow: inset 0 10px 0 7px rgb(53, 21, 6);
-  box-shadow: inset 0 20px 20 15px rgba(0, 0, 0, 0.3) 0 0 5px 5px
-    rgba(0, 0, 0, 0.5);
-}
-
-#score-title {
-  display: inline-flex;
-  font-family: "Flavors", sans-serif;
-  font-size: 20px;
-  margin-left: 70px;
-}
-
-#score-title h2 {
-  font-size: 40px;
-}
-
-#time-title {
-  display: inline-flex;
-  justify-content: right;
-  font-family: "Flavors", sans-serif;
-  font-size: 20px;
-  margin-left: 850px;
-}
-
-#time-title h2 {
-  font-size: 40px;
-}
-
-.good-mole {
-  background-image: url(../images/good-mole.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: black;
-}
-.bad-mole {
-  background-image: url(../images/bad-mole.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.game-over {
-  font-family: "Flavors", sans-serif;
-  font-size: 40px;
-  font-weight: 400;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: rgba(249, 228, 1, 0.949);
-  margin-bottom: 30px;
-}
-
-#restart-button {
-  font-family: "Flavors", sans-serif;
-  font-size: 60px;
-  font-weight: 400;
-  display: flex;
-  justify-self: center;
-  color: rgba(249, 228, 1, 0.949);
-  background: none;
-  box-shadow: 0 0 40px rgba(249, 228, 1, 0.949);
-  border: 2px solid rgba();
-  margin-top: 30px;
-  border-radius: 10px;
-  &:hover {
-    background-color: rgba(249, 228, 1, 0.949);
-    color: rgb(11, 98, 11);
+  h1 {
+    font-family: "Flavors", sans-serif;
+    font-size: 80px;
+    font-weight: 400;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(249, 228, 1, 0.949);
+    margin-bottom: 30px;
   }
-}
 
-/*Feedback section */
-#feedback h3 {
-  font-family: "Flavors", sans-serif;
-  font-size: 60px;
-  font-weight: 400;
-  display: flex;
-  justify-self: center;
-  color: rgba(249, 228, 1, 0.949);
-}
-}
+  h2 {
+    font-family: "Flavors", sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(249, 228, 1, 0.949);
+    margin-bottom: 30px;
+  }
+
+  #rules {
+    font-family: "Flavors", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    display: block;
+    justify-self: center;
+    text-align: center;
+    color: rgba(249, 228, 1, 0.949);
+    list-style-type: none;
+    margin-bottom: 30px;
+  }
+
+  #start-button {
+    font-family: "Flavors", sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    display: flex;
+    justify-self: center;
+    color: rgba(249, 228, 1, 0.949);
+    background: none;
+    box-shadow: 0 0 40px rgba(249, 228, 1, 0.949);
+    border: 2px solid rgba();
+    margin-top: 30px;
+    border-radius: 10px;
+    &:hover {
+      background-color: rgba(249, 228, 1, 0.949);
+      color: rgb(11, 98, 11);
+    }
+  }
+
+  /** Game board styles **/
+
+  .grid {
+    width: 600px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-self: center;
+    gap: 20px;
+  }
+
+  .square {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    background-color: rgb(128, 57, 24);
+    border-radius: 50%;
+    box-shadow: inset 0 10px 0 7px rgb(53, 21, 6);
+    box-shadow: inset 0 20px 20 15px rgba(0, 0, 0, 0.3) 0 0 5px 5px
+      rgba(0, 0, 0, 0.5);
+  }
+
+  #score-title {
+    display: inline-flex;
+    font-family: "Flavors", sans-serif;
+    font-size: 20px;
+    margin-left: 70px;
+  }
+
+  #score-title h2 {
+    font-size: 40px;
+  }
+
+  #time-title {
+    display: inline-flex;
+    justify-content: right;
+    font-family: "Flavors", sans-serif;
+    font-size: 20px;
+    margin-left: 850px;
+  }
+
+  #time-title h2 {
+    font-size: 40px;
+  }
+
+  .good-mole {
+    background-image: url(../images/good-mole.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+  }
+  .bad-mole {
+    background-image: url(../images/bad-mole.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .game-over {
+    font-family: "Flavors", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(249, 228, 1, 0.949);
+    margin-bottom: 30px;
+  }
+
+  #restart-button {
+    font-family: "Flavors", sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    display: flex;
+    justify-self: center;
+    color: rgba(249, 228, 1, 0.949);
+    background: none;
+    box-shadow: 0 0 40px rgba(249, 228, 1, 0.949);
+    border: 2px solid rgba();
+    margin-top: 30px;
+    &:hover {
+      background-color: rgba(249, 228, 1, 0.949);
+      color: rgb(11, 98, 11);
+    }
+  }
+  
+  /*Feedback section */
+  #feedback h3 {
+    font-family: "Flavors", sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    display: flex;
+    justify-self: center;
+    color: rgba(249, 228, 1, 0.949);
+  }
+  
+  }
+
 /*styles for  XXL screens*/
 @media screen and (min-width: 1400px) {
-
-body {
-  background-image: url(../images/avo-background.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  cursor: none;
-}
-h1 {
-  font-family: "Flavors", sans-serif;
-  font-size: 80px;
-  font-weight: 400;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: rgba(249, 228, 1, 0.949);
-  margin-bottom: 30px;
-}
-
-h2 {
-  font-family: "Flavors", sans-serif;
-  font-size: 60px;
-  font-weight: 400;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: rgba(249, 228, 1, 0.949);
-  margin-bottom: 30px;
-}
-h3 {
-   font-family: "Flavors", sans-serif;
-  font-size: 60px;
-  font-weight: 400;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: rgba(249, 228, 1, 0.949);
-  margin-bottom: 30px;
-}
-
-#rules {
-  font-family: "Flavors", sans-serif;
-  font-size: 30px;
-  font-weight: 400;
-  display: block;
-  justify-self: center;
-  text-align: center;
-  color: rgba(249, 228, 1, 0.949);
-  list-style-type: none;
-  margin-bottom: 30px;
-}
-
-#start-button {
-  font-family: "Flavors", sans-serif;
-  font-size: 60px;
-  font-weight: 400;
-  display: flex;
-  justify-self: center;
-  color: rgba(249, 228, 1, 0.949);
-  background: none;
-  box-shadow: 0 0 40px rgba(249, 228, 1, 0.949);
-  border: 2px solid rgba();
-  margin-top: 30px;
-  border-radius: 10px;
-  &:hover {
-    background-color: rgba(249, 228, 1, 0.949);
-    color: rgb(11, 98, 11);
+  body {
+    background-image: url(../images/avo-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: none;
   }
-}
-
-/** Game board styles **/
-
-.grid {
-  width: 600px;
-  height: 600px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  justify-self: center;
-  gap: 20px;
-}
-
-.square {
-  width: 200px;
-  height: 200px;
-  border: 1px solid black;
-  background-color: rgb(128, 57, 24);
-  border-radius: 50%;
-  box-shadow: inset 0 10px 0 7px rgb(53, 21, 6);
-  box-shadow: inset 0 20px 20 15px rgba(0, 0, 0, 0.3) 0 0 5px 5px
-    rgba(0, 0, 0, 0.5);
-}
-
-#score-title {
-  display: inline-flex;
-  font-family: "Flavors", sans-serif;
-  font-size: 20px;
-  margin-left: 70px;
-}
-
-#score-title h2 {
-  font-size: 40px;
-}
-
-#time-title {
-  display: inline-flex;
-  justify-content: right;
-  font-family: "Flavors", sans-serif;
-  font-size: 20px;
-  margin-left: 850px;
-}
-
-#time-title h2 {
-  font-size: 40px;
-}
-
-.good-mole {
-  background-image: url(../images/good-mole.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: black;
-}
-.bad-mole {
-  background-image: url(../images/bad-mole.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.game-over {
-  font-family: "Flavors", sans-serif;
-  font-size: 40px;
-  font-weight: 400;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: rgba(249, 228, 1, 0.949);
-  margin-bottom: 30px;
-}
-
-#restart-button {
-  font-family: "Flavors", sans-serif;
-  font-size: 60px;
-  font-weight: 400;
-  display: flex;
-  justify-self: center;
-  color: rgba(249, 228, 1, 0.949);
-  background: none;
-  box-shadow: 0 0 40px rgba(249, 228, 1, 0.949);
-  border: 2px solid rgba();
-  margin-top: 30px;
-  border-radius: 10px;
-  &:hover {
-    background-color: rgba(249, 228, 1, 0.949);
-    color: rgb(11, 98, 11);
+  h1 {
+    font-family: "Flavors", sans-serif;
+    font-size: 80px;
+    font-weight: 400;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(249, 228, 1, 0.949);
+    margin-bottom: 30px;
   }
-}
 
-/*Feedback section */
-#feedback h3 {
-  font-family: "Flavors", sans-serif;
-  font-size: 60px;
-  font-weight: 400;
-  display: flex;
-  justify-self: center;
-  color: rgba(249, 228, 1, 0.949);
-}
+  h2 {
+    font-family: "Flavors", sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(249, 228, 1, 0.949);
+    margin-bottom: 30px;
+  }
+  h3 {
+    font-family: "Flavors", sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(249, 228, 1, 0.949);
+    margin-bottom: 30px;
+  }
 
-/*Cursor was taken from https://www.flaticon.com*/
-.cursor {
-  height: 110px;
-  width: 100px;
-  position: absolute;
-  top: 100px;
-  left: 100px;
-  background-image: url(../images/mallet.png);
-  background-size: 100% 100%;
-  transform: translate(-30%, -30%);
-  transition: transform 0.1s;
-  pointer-events: none;
-}
+  #rules {
+    font-family: "Flavors", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    display: block;
+    justify-self: center;
+    text-align: center;
+    color: rgba(249, 228, 1, 0.949);
+    list-style-type: none;
+    margin-bottom: 30px;
+  }
 
-.cursor.active {
-  transform: translate(-20%, -20%) rotate(-45deg);
-}
-}
+  #start-button {
+    font-family: "Flavors", sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    display: flex;
+    justify-self: center;
+    color: rgba(249, 228, 1, 0.949);
+    background: none;
+    box-shadow: 0 0 40px rgba(249, 228, 1, 0.949);
+    border: 2px solid rgba();
+    margin-top: 30px;
+    border-radius: 10px;
+    &:hover {
+      background-color: rgba(249, 228, 1, 0.949);
+      color: rgb(11, 98, 11);
+    }
+  }
 
+  /** Game board styles **/
+
+  .grid {
+    width: 600px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-self: center;
+    gap: 20px;
+  }
+
+  .square {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    background-color: rgb(128, 57, 24);
+    border-radius: 50%;
+    box-shadow: inset 0 10px 0 7px rgb(53, 21, 6);
+    box-shadow: inset 0 20px 20 15px rgba(0, 0, 0, 0.3) 0 0 5px 5px
+      rgba(0, 0, 0, 0.5);
+  }
+
+  #score-title {
+    display: inline-flex;
+    font-family: "Flavors", sans-serif;
+    font-size: 20px;
+    margin-left: 70px;
+  }
+
+  #score-title h2 {
+    font-size: 40px;
+  }
+
+  #time-title {
+    display: inline-flex;
+    justify-content: right;
+    font-family: "Flavors", sans-serif;
+    font-size: 20px;
+    margin-left: 850px;
+  }
+
+  #time-title h2 {
+    font-size: 40px;
+  }
+
+  .good-mole {
+    background-image: url(../images/good-mole.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+  }
+  .bad-mole {
+    background-image: url(../images/bad-mole.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .game-over {
+    font-family: "Flavors", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(249, 228, 1, 0.949);
+    margin-bottom: 30px;
+  }
+
+  #restart-button {
+    font-family: "Flavors", sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    display: flex;
+    justify-self: center;
+    color: rgba(249, 228, 1, 0.949);
+    background: none;
+    box-shadow: 0 0 40px rgba(249, 228, 1, 0.949);
+    border: 2px solid rgba();
+    margin-top: 30px;
+    border-radius: 10px;
+    &:hover {
+      background-color: rgba(249, 228, 1, 0.949);
+      color: rgb(11, 98, 11);
+    }
+  }
+
+  /*Feedback section */
+  #feedback h3 {
+    font-family: "Flavors", sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    display: flex;
+    justify-self: center;
+    color: rgba(249, 228, 1, 0.949);
+  }
+
+
+}
 

@@ -1,81 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Guac-A-Mole</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
+
     
-</head>
-<body>
+  </head>
+  <body>
     <div class="wrapper">
-        <!-- Main Menu -->
-        <div id="menu-screen">
-            <h1>Guac-A-Mole</h1>
-            <h2>Rules</h2>
-            <ul id="rules">
-                <li>You have 60 seconds to hit as many bad Avocados as possible.</li>
-                <li>Hit 10 in a row and the difficulty will increase.</li>
-                <li>Hit a good Avocado and it's GAME OVER!</li>
-                <li>Have a guacing good time!</li>
-            </ul>
-            <button id="start-button">Start Game!</button>
-            
+      <!-- Main Menu -->
+      <div id="menu-screen">
+        <h1>Guac-A-Mole</h1>
+        <h2>Rules</h2>
+        <ul id="rules">
+          <li>You have 60 seconds to hit as many bad Avocados as possible.</li>
+          <li>Hit 10 in a row and the difficulty will increase.</li>
+          <li>Hit a good Avocado and it's GAME OVER!</li>
+          <li>Have a guacing good time!</li>
+        </ul>
+        <button id="start-button">Start Game!</button>
+      </div>
+      <!-- Game Screen (Initially Hidden) -->
+      <div id="game-screen">
+        <h1>Guac-A-Mole</h1>
+        <div id="score-title">
+          <h2>Your score:</h2>
+          <h2 id="score">0</h2>
         </div>
-        <!-- Game Screen (Initially Hidden) -->
-        <div id="game-screen">
-            <h1>Guac-A-Mole</h1>
-            <div id="score-title">
-                <h2>Your score:</h2>
-                <h2 id="score">0</h2>
-            </div>
-            <div id="time-title">
-                <h2>Time left: </h2>
-                <h2 id="time-left">60</h2>
-            </div>
-            <div class="grid">
-                <div class="square" id="1"></div>
-                <div class="square" id="2"></div>
-                <div class="square" id="3"></div>
-                <div class="square" id="4"></div>
-                <div class="square" id="5"></div>
-                <div class="square" id="6"></div>
-                <div class="square" id="7"></div>
-                <div class="square" id="8"></div>
-                <div class="square" id="9"></div>
-            </div>
-            <button id="restart-button" style="display: none;">Restart</button>
+        <div id="time-title">
+          <h2>Time left:</h2>
+          <h2 id="time-left">60</h2>
         </div>
-        <!-- Game Screen (Initially Hidden) -->
-        <div id="result-screen">
-            <h1>Guac-A-Mole</h1>
-            <div id="end-game-result"></div>
-            <button id="restart-button" onclick="restartTheGame();">Restart</button>
-            <br>
-            <!--Feedback section-->
-            <div id="feedback">
-                 <h3>Feedback</h3>
-            <p>Tell us what you think</p>
-            </div>
+        <div class="grid">
+          <div class="square" id="1"></div>
+          <div class="square" id="2"></div>
+          <div class="square" id="3"></div>
+          <div class="square" id="4"></div>
+          <div class="square" id="5"></div>
+          <div class="square" id="6"></div>
+          <div class="square" id="7"></div>
+          <div class="square" id="8"></div>
+          <div class="square" id="9"></div>
+        </div>
+        <button id="restart-button" style="display: none">Restart</button>
+      </div>
+      <!-- Game Screen (Initially Hidden) -->
+      <div id="result-screen">
+        <h1>Guac-A-Mole</h1>
+        <div id="end-game-result"></div>
+        <button id="restart-button" onclick="restartTheGame();">Restart</button>
+        <br />
+        <!--Feedback section-->
+        <div id="feedback">
+          <h3>Feedback</h3>
+          <p>Tell me what you think</p>
+        </div>
+          <br />
+          <div class="feedback-form">
             <div>
-                <br>
-                <div class="feedback-form">
-                <label for="form-type">Email Address</label>
-                <input type="email" class="form-control" id="input-1">
-                </div>
-                <div class="feedback-form">
-                    <label for="form-text-area" class="form-label">What could I do better?</label>
-                    <textarea class="form-control" id="textarea1" rows="3"></textarea>
-                </div>
-            </div>
+  <label for="exampleFormControlInput1" class="form-label">Email address</label>
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+</div>
+<div>
+  <label for="exampleFormControlTextarea1" class="form-label">What could I do better?</label>
+  <textarea class="form-control" id="textarea1" rows="3"></textarea>  
+</div>
 
         <!-- Audio -->
         <audio src="assets/sounds/splatter.mp3" id="splatter"></audio>
-    </div>
-<!--cursor-->
-    <div class="cursor"></div>
-    <script src="assets/js/script.js"></script>
+      </div>
+      <!--cursor-->
+      <div class="cursor"></div>
+      <script src="assets/js/script.js"></script>
     </div>
 
-  
-</body>
+
+    
+  </body>
+</html>
