@@ -247,7 +247,7 @@ p {
 /*styles for tablet sized screens*/
 @media screen and (min-width: 728px) {
   body {
-    background-image: url(../images/avo-background-dark.webp)
+    background-image: url(../images/avo-background-dark.webp);
     background-size: cover;
     background-repeat: no-repeat;
     cursor: none;
@@ -451,6 +451,7 @@ p {
   .cursor.active {
     transform: translate(-20%, -20%) rotate(-45deg);
   }
+  
   h1 {
     font-family: "Flavors", sans-serif;
     font-size: 80px;
@@ -647,6 +648,7 @@ p {
   .cursor.active {
     transform: translate(-20%, -20%) rotate(-45deg);
   }
+
   h1 {
     font-family: "Flavors", sans-serif;
     font-size: 80px;
