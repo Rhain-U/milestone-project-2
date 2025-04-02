@@ -170,7 +170,8 @@ p {
   background-image: url(../images/good-mole.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: black;
+  display: flex;
+  justify-items: center;
 }
 .bad-mole {
   background-image: url(../images/bad-mole.jpg);
@@ -451,7 +452,7 @@ p {
   .cursor.active {
     transform: translate(-20%, -20%) rotate(-45deg);
   }
-  
+
   h1 {
     font-family: "Flavors", sans-serif;
     font-size: 80px;
