@@ -34,7 +34,9 @@ let timerId = null;
 
 gameScreen.style.display = "none";
 resultScreen.style.display = "none";
-restartButton.style.display = "none";
+restartButton.forEach((button) => {
+  button.style.display = "none";
+});
 
 /** Start Game */
 startGameButton.addEventListener("click", () => {

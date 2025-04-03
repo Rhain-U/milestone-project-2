@@ -522,9 +522,10 @@ p {
     margin-bottom: 30px;
   }
 
-  .start-button {
+  #start-button {
     font-family: "Flavors", sans-serif;
-    font-size: 60px;
+    font-size: 
+    40px;
     font-weight: 400;
     display: flex;
     justify-self: center;
@@ -888,3 +889,4 @@ p {
   }
 
   
+}
