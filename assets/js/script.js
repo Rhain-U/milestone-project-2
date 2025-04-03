@@ -1,6 +1,6 @@
 /** Global variables */
 const startGameButton = document.querySelector("#start-button");
-const restartButton = document.querySelector("#restart-button");
+const restartButton = document.querySelector(".restart-button");
 const menuScreen = document.querySelector("#menu-screen");
 const gameScreen = document.querySelector("#game-screen");
 const squares = document.querySelectorAll(".square");

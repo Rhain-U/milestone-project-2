@@ -31,8 +31,6 @@
   transform: translate(-20%, -20%) rotate(-45deg);
 }
 
-
-
 body {
   background-image: url(../images/avo-background-dark.webp);
   background-size: cover;
@@ -195,7 +193,7 @@ p {
   border-radius: 40px;
 }
 
-#restart-button {
+.restart-button {
   font-family: "Flavors", sans-serif;
   font-size: 40px;
   font-weight: 200;
@@ -242,7 +240,6 @@ p {
   font-size: 20px;
   border-radius: 40px;
   box-shadow: 0 0 40px rgba(249, 228, 1, 0.949);
-  
 }
 
 /*styles for tablet sized screens*/
@@ -371,7 +368,7 @@ p {
     margin-bottom: 30px;
   }
 
-  #restart-button {
+  .restart-button {
     font-family: "Flavors", sans-serif;
     font-size: 60px;
     font-weight: 400;
@@ -573,7 +570,7 @@ p {
     margin-bottom: 30px;
   }
 
-  #restart-button {
+  .restart-button {
     font-family: "Flavors", sans-serif;
     font-size: 60px;
     font-weight: 400;
@@ -735,9 +732,9 @@ p {
   }
 
   #score-title {
-    display: inline-flex;
+    display: inlflex;
     font-family: "Flavors", sans-serif;
-    font-size: 20px;
+    font-size: 30px;
     margin-left: 70px;
   }
 
@@ -746,15 +743,17 @@ p {
   }
 
   #time-title {
-    display: inline-flex;
-    justify-content: right;
+    display: flex;
+    justify-content: center;
     font-family: "Flavors", sans-serif;
-    font-size: 20px;
-    margin-left: 850px;
+    font-size: 30px;
+    margin-right: 60px;
   }
 
   #time-title h2 {
     font-size: 40px;
+    display: flex;
+    justify-content: center;
   }
 
   .good-mole {
@@ -781,7 +780,7 @@ p {
     margin-bottom: 30px;
   }
 
-  #restart-button {
+  .restart-button {
     font-family: "Flavors", sans-serif;
     font-size: 60px;
     font-weight: 400;
@@ -807,7 +806,7 @@ p {
   .form-control {
     display: flex;
     justify-self: center;
-    width:30%;
+    width: 30%;
   }
 
   /*Feedback section */
@@ -828,7 +827,7 @@ p {
     width: 15%;
     font-family: "Flavors", sans-serif !important;
     color: rgba(249, 228, 1, 0.949);
-    background:none;
+    background: none;
     justify-content: center;
     font-size: 30px;
     border-radius: 40px;
