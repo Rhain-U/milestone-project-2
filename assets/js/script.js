@@ -153,9 +153,13 @@ function endGame(message) {
 }
 /**
  * Restart the game by reloading the page
- */
-function restartTheGame() {
-  window.location.reload();
-  splatterSound.play();
+
+
+/**404 reload page to take the user back to the landing page. */
+
+function goToHome() {
+       document.getElementById("menu-screen").style.display = "block";
+       document.getElementById("game-screen").style.display = "none";
+       document.getElementById("result-screen").style.display = "none";
 }
 
