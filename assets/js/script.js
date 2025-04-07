@@ -1,3 +1,5 @@
+/* jshint esversion: 6 */
+
 /** Global variables */
 const startGameButton = document.querySelector("#start-button");
 const restartButton = document.querySelectorAll(".restart-button");
