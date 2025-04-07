@@ -797,8 +797,8 @@ button {
   /** Game board styles **/
 
   .grid {
-    width: 600px;
-    height: 600px;
+    width: 500px;
+    height: 500px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -807,8 +807,8 @@ button {
   }
 
   .square {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border: 1px solid black;
     background-color: rgb(128, 57, 24);
     border-radius: 50%;
@@ -825,7 +825,7 @@ button {
   }
 
   #score-title h2 {
-    font-size: 40px;
+    font-size: 30px;
   }
 
   #time-title {
@@ -834,12 +834,16 @@ button {
     font-family: "Flavors", sans-serif;
     font-size: 30px;
     margin-right: 60px;
+    
+    
   }
 
   #time-title h2 {
-    font-size: 40px;
+    font-size: 30px;
     display: flex;
     justify-content: center;
+   
+  
   }
 
   .good-mole {
