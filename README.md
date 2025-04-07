@@ -4,7 +4,7 @@ A fun Whack a mole game aimed at children between the ages of 6-10.
 
 [View the site from here.](https://rhain-u.github.io/milestone-project-2/)
 
-![screenshot to display the responsiveness of the site](/assets/images/responsive.png)
+![screenshot to display the responsiveness of the site](/assets/images/responsive.jpg)
 
 ## 1. User Experience
 
@@ -36,41 +36,44 @@ for both the good mole and bad mole I used Microsoft AI Designer. (https://desig
 
 ### Fonts & Colour schemes
 
-![Colour palette of the colours applied]()
+![Colour palette applied for font](../milestone-project-2/assets/images/font-colour-pallet.jpg)
+![Colour palette applied for holes](../milestone-project-2/assets/images/hole-colour-pallet-1.jpg)
+![Colour palette applied for hole shadows](../milestone-project-2/assets/images/hole-colour-pallet-2.jpg)
 
-The colour scheme applied has been selected based on the tones of the background image. I chose to darken the background image and select a bright vibrant yellow for the text so it is easily readable and meets assessabilioty guidlines. I tested this with friends and family members to get clear feedback.
+The colour scheme applied has been selected based on the tones of the background image. I chose to darken the background image and select a bright vibrant yellow for the text so it is easily readable and meets assessabilioty guidlines. I tested this with friends and family members to get clear feedback. I have also ran lighthouse tests on both mobile and desktop which came back almost 100%.
 
 ### 2.3 Wireframes
 
 I used Balsamiq to create wireframes to help me visualize the layout of the site. Wireframes for mobile, tablet and desktop were created.
 
-![Balsamiq Wireframes image 1](/documentation/wireframe-1.webp)
-![Balsamiq Wireframes image 2](/documentation/wireframe-2.webp)
+![Balsamiq Mobile wireframe 1](//assets/images/mobile-home-wireframe.jpg)
+![Balsamiq Mobile wireframe 2](//assets/images/mobile-game-wireframe.jpg)
+![Balsamiq Mobile wireframe 3](//assets/images/mobile-results-wireframe.jpg)
+![Balsamiq Tablet Wireframe 1](//assets/images/tablet-home-wireframe.jpg)
+![Balsamiq Tablet Wireframe 2](//assets/images/tablet-game-wireframe.jpg)
+![Balsamiq Tablet Wireframe 3](//assets/images/tablet-results-wireframe.jpg)
+![Balsamiq Desktop Wireframe 1](//assets/images/desktop-home-wireframe.jpg)
+![Balsamiq Desktop Wireframe 2](//assets/images/desktop-game-wireframe.jpg)
+![Balsamiq Desktop Wireframe 3](//assets/images/desktop-results-wireframe.jpg)
+[Balsamiq 404 Wireframe](//assets/images/404-wireframe.jpg)
 
 ## 3. Features
 
-The website consists of an index page with hidden pages within. The menu screen, game screen and results screen. Each will be shown once in turn once the start button has been clicked.
+The website consists of an index page with hidden pages within. The menu screen, game screen and results screen. Each will be shown once in turn once the start button has been clicked. I have also included a 404 error page.
 
-![Screenshot of the intro message](/documentation/intro-screenshot.webp)
+![Screenshot of the intro message](//assets/images/menu-screen.jpg)
 
-Once the start button is selected, the intro section is hidden and a new section is displayed which is the main quiz section. The first question is displayed with three selectable options displayed below. In addition there is another button which allows the user to move the the next question. The next button is disabled until an option is selected. When the user hovers over or tries to select the next button a tooltip pops up to feedback to the user that an option must be selected first. In addition the cursor displays a no entry symbol. When an option is selected the next button becomes active and no longer displays a tooltip. In addition the cursor becomes a pointer to indicate the button is active.
+The User will land on the menu screen which will have the title of the game along with the rules of and start button. Once the start button is pressed it will take the user to the game screen where the timer will start to count down from 60 and stat with a score of 0. Every time the bad avocado is hit with the mallet a splatter sound will play and a score will be added to the scoreboard. 
 
-![image of the tooltip alert when the next button is disabled](/documentation/alert-tooltip.webp)
-![GIF of the hover effect](/documentation/hover.gif)
+![image of game screen](//assets/images/game-screen.jpg)
 
-Additional feedback is provided to the user by the interactivity on the quiz section. When the options are hovered over there is an effect and once an option is selected this effect is applied to allow the selection to standout from the other options.
+If the User clicks on the good mole it will nbe game over and it will take them to the results screen where they can see their total and a restart button which will take the user back to the homepage to play again. 
 
-Once you reach the final question the 'Next Question' button changes to the 'Finish' button.
+There will also be a form below the restart button where the user can provide feedback on the game.
 
-![Screenshot of the first question and options](/documentation/quizbox-screenshot.webp) ![Screenshot of the last Question with Finish Button](/documentation/finishbutton.webp)
+![image of game screen](//assets/images/results-screen.jpg)
 
-After the last question is answered and 'Finish' is selected, the user is navigated to a different html page which contains the result of the quiz. The Javascript in the background calculates which option has been selected most frequently to provide a result. In the event of a tie the result is randomized between the two most popular options selected.
-
-An additional effect is applied once the result page is loaded to celebrate the result. The confetti function has been customized to throw out themed emoji's based on the winning destination.
-
-![gif of kenya.html](/documentation/kenya-gif.gif)
-![gif of japan.html](/documentation/japan-gif.gif)
-![gif of barbados.html](/documentation/barbados-gif.gif)
+I have applied a customer cursor which on clickdown rotates ns click up returns upright adding an extra element of fun to the game. I found this after watching a tutorial who I have credited below. 
 
 All of the pages other than that primary introductory section contain a restart button which navigate back to the very start.
 

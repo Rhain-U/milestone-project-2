@@ -116,7 +116,7 @@ p {
 
 #start-button {
   font-family: "Flavors", sans-serif;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 200;
   display: flex;
   justify-self: center;
@@ -319,13 +319,13 @@ button {
     width: 75%;
   }
 
-  .start-button {
+  #start-button {
     font-family: "Flavors", sans-serif;
     font-size: 60px;
     font-weight: 400;
     display: flex;
-    justify-content: center; /* centers text horizontally */
-    align-items: center; /* centers text vertically */
+    justify-content: center;
+    align-items: center; 
     color: rgba(249, 228, 1, 0.949);
     box-shadow: 0 0 40px rgba(249, 228, 1, 0.949);
     border: 2px solid rgba(249, 228, 1, 0.949);
@@ -554,7 +554,7 @@ button {
 
   #start-button {
     font-family: "Flavors", sans-serif;
-    font-size: 40px;
+    font-size: 60px;
     font-weight: 400;
     display: flex;
     justify-self: center;
@@ -779,7 +779,7 @@ button {
     margin-bottom: 30px;
   }
 
-  #start-button {
+ #start-button {
     font-family: "Flavors", sans-serif;
     font-size: 60px;
     font-weight: 400;
