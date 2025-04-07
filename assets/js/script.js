@@ -1,6 +1,7 @@
 /** Global variables */
 const startGameButton = document.querySelector("#start-button");
 const restartButton = document.querySelectorAll(".restart-button");
+const restartTheGame = document.querySelector(".restart-game");
 const menuScreen = document.querySelector("#menu-screen");
 const gameScreen = document.querySelector("#game-screen");
 const squares = document.querySelectorAll(".square");
@@ -29,13 +30,9 @@ function activateCursor() {
 
 window.addEventListener("mousedown", activateCursor);
 
-function deactivateCursor() {
-  if (cursor) {
-    cursor.classList.remove("active");
-  }
-}
-
-window.addEventListener("mouseup", deactivateCursor);
+window.addEventListener("mouseup", () => {
+  cursor.classList.remove("active");
+});
 
 let result = 0;
 let currentTime = 60;

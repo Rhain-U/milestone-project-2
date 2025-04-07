@@ -26,7 +26,6 @@
   border-radius: 30px;
 }
 
-
 /*Cursor was taken from https://www.flaticon.com*/
 .cursor {
   height: 110px;
@@ -255,8 +254,8 @@ p {
   font-size: 30px;
   border-radius: 40px;
   box-shadow: 0 0 40px rgba(249, 228, 1, 0.949);
-   background-color: black;
-    opacity: 0.8;
+  background-color: black;
+  opacity: 0.8;
 }
 
 button {
@@ -269,9 +268,11 @@ button {
 }
 
 #return-home {
-  margin-top:40px
+  margin-top: 40px;
+  width: 25%;
+  display: flex;
+  justify-self: center;
 }
-
 
 /*styles for tablet sized screens*/
 @media screen and (min-width: 728px) {
@@ -301,7 +302,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: rgba(249, 228, 1, 0.949); 
+    color: rgba(249, 228, 1, 0.949);
     margin-bottom: 30px;
   }
 
@@ -456,14 +457,14 @@ button {
   }
 
   button {
-  display: flex;
-  justify-self: center;
-  align-items: center;
-  background: none;
-  border-radius: 40px;
-  background-color: black;
-  width: 25%;
-}
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    background: none;
+    border-radius: 40px;
+    background-color: black;
+    width: 25%;
+  }
 
   #error-textbox {
     height: 450px;
@@ -476,6 +477,13 @@ button {
     border: 2px solid rgba(249, 228, 1, 0.949);
     margin-top: 100px;
     border-radius: 30px;
+  }
+
+  #return-home {
+    margin-top: 40px;
+    width: 25%;
+    display: flex;
+    justify-self: center;
   }
 }
 
@@ -544,8 +552,7 @@ button {
 
   #start-button {
     font-family: "Flavors", sans-serif;
-    font-size: 
-    40px;
+    font-size: 40px;
     font-weight: 400;
     display: flex;
     justify-self: center;
@@ -679,14 +686,21 @@ button {
     opacity: 0.8;
   }
 
-    button {
-  display: flex;
-  justify-self: center;
-  align-items: center;
-  background: none;
-  border-radius: 40px;
-  background-color: black;
-  width: 25%;
+  button {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    background: none;
+    border-radius: 40px;
+    background-color: black;
+    width: 25%;
+  }
+
+  #return-home {
+  margin-top: 40px;
+    width: 25%;
+    display: flex;
+    justify-self: center
 }
 }
 
@@ -889,7 +903,7 @@ button {
     border-radius: 40px;
   }
 
-   #error-textbox {
+  #error-textbox {
     height: 550px;
     width: 600px;
     display: flex;
@@ -918,15 +932,21 @@ button {
     opacity: 0.8;
   }
 
-    button {
-  display: flex;
-  justify-self: center;
-  align-items: center;
-  background: none; 
-  border-radius: 40px;
-  background-color: black;
-  width: 20%;
+  button {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    background: none;
+    border-radius: 40px;
+    background-color: black;
+    width: 20%;
+  }
+
+  #return-home {
+  margin-top: 40px;
+    width: 25%;
+    display: flex;
+    justify-self: center
 }
 
-  
 }
