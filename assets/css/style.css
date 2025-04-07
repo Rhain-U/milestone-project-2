@@ -324,12 +324,14 @@ button {
     font-size: 60px;
     font-weight: 400;
     display: flex;
-    justify-self: center;
+    justify-content: center; /* centers text horizontally */
+    align-items: center; /* centers text vertically */
     color: rgba(249, 228, 1, 0.949);
     box-shadow: 0 0 40px rgba(249, 228, 1, 0.949);
     border: 2px solid rgba(249, 228, 1, 0.949);
     margin-top: 30px;
     border-radius: 10px;
+    text-align: center;
   }
 
   /** Game board styles **/
@@ -697,11 +699,11 @@ button {
   }
 
   #return-home {
-  margin-top: 40px;
+    margin-top: 40px;
     width: 25%;
     display: flex;
-    justify-self: center
-}
+    justify-self: center;
+  }
 }
 
 /*styles for  XXL screens*/
@@ -944,10 +946,9 @@ button {
   }
 
   #return-home {
-  margin-top: 40px;
+    margin-top: 40px;
     width: 25%;
     display: flex;
-    justify-self: center
-}
-
+    justify-self: center;
+  }
 }

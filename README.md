@@ -36,7 +36,7 @@ for both the good mole and bad mole I used Microsoft AI Designer. (https://desig
 
 ### Fonts & Colour schemes
 
-![Colour palette of the colours applied](/documentation/color-palette.webp)
+![Colour palette of the colours applied]()
 
 The colour scheme applied has been selected based on the tones of the background image. I chose to darken the background image and select a bright vibrant yellow for the text so it is easily readable and meets assessabilioty guidlines. I tested this with friends and family members to get clear feedback.
 

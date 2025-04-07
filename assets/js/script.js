@@ -126,6 +126,9 @@ function moveBadMole() {
     if (goodMoleInterval) clearInterval(goodMoleInterval);
     goodMoleInterval = setInterval(addGoodMole, 2000);
   }
+  restartButton.forEach((button) => {
+    button.style.display = "none";
+  });
 }
 function moveGoodMole() {
   setInterval(addGoodMole, 2000);
