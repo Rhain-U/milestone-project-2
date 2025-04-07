@@ -1,6 +1,6 @@
 # Guac A Mole
 
-A fun Whack a mole game themed around Guac which is suitable for all ages. 
+A fun Whack a mole game aimed at children between the ages of 6-10. 
 
 [View the site from here.](https://rhain-u.github.io/milestone-project-2/)
 
@@ -10,26 +10,27 @@ A fun Whack a mole game themed around Guac which is suitable for all ages.
 
 The purpose of this website is to provide a fun and interactive Whack a mole game where the user has to hit the bad guacs to score points. Hit the good one and its Game over.
 
-The site is aimed at users of all ages for a fun experience.
+The site is aimed at children ages 6-10 and its purpose is to help build on hand eye coordination.
 
 ### 1.1 User Stories
 
 #### Client Goals
 - Ability to  clearly understand the main aim of the game.
-- An easy-to-use game that is suitable for all ages
+- An easy-to-use game that is suitable children 6 and above as well as teenagers and adults.
 - Ability to clearly understand which mole to hit and know when it has been hit. 
 
 #### Returning Client Goals
 - Bright and colourful display with a customised cursor.
 - Ability to restart the game.
+- Ability to provide feedback for further adaptations to the game.
 
-I have relied on these user stories to build the fundimentals of the game and keep on track of the end goals and to ensure that I have met all critea. 
+I have relied on these user stories to build the fundimentals of the game and keep on track of the end goals and to ensure that I have met all criteria. 
 
 ## 2. Design
 
 ### 2.1 Imagery
 
-For the background I chose an avocado themed background which I got from (https://pixabay.com/). I chose this as it is very colourful and entising.
+For the background I chose an avocado themed background which I got from (https://pixabay.com/). I chose this as it is very colourful and entising. 
 
 for both the good mole and bad mole I used Microsoft AI Designer. (https://designer.microsoft.com/image-creator)
 
@@ -37,7 +38,7 @@ for both the good mole and bad mole I used Microsoft AI Designer. (https://desig
 
 ![Colour palette of the colours applied](/documentation/color-palette.webp)
 
-The colour scheme applied has been selected based on the tones of the background image. In order the standout against the blue tones the darker colours have a green/blue hue. The opacity of the white sections which contain text has been altered to overlay over the background without creating a harsh delineation.
+The colour scheme applied has been selected based on the tones of the background image. I chose to darken the background image and select a bright vibrant yellow for the text so it is easily readable and meets assessabilioty guidlines. I tested this with friends and family members to get clear feedback.
 
 ### 2.3 Wireframes
 
@@ -48,9 +49,7 @@ I used Balsamiq to create wireframes to help me visualize the layout of the site
 
 ## 3. Features
 
-The website consists of four different pages. The main page contains the introduction and quiz section. Once the finish button is selected at the end of the quiz the user is navigated to another page based on their results of the selections made when completing the quiz.
-
-When the index page initially loads, only the page heading, a section contain an introductory message and a start button are displayed.
+The website consists of an index page with hidden pages within. The menu screen, game screen and results screen. Each will be shown once in turn once the start button has been clicked.
 
 ![Screenshot of the intro message](/documentation/intro-screenshot.webp)
 

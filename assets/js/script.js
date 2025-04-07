@@ -118,12 +118,12 @@ function moveBadMole() {
   if (gameInterval) clearInterval(gameInterval);
   gameInterval = setInterval(addBadMole, 1000);
 
-/** Move good moles */
-let goodMoleInterval = null;
-function moveGoodMole() {
-  if (goodMoleInterval) clearInterval(goodMoleInterval);
-  goodMoleInterval = setInterval(addGoodMole, 2000);
-}
+  /** Move good moles */
+  let goodMoleInterval = null;
+  function moveGoodMole() {
+    if (goodMoleInterval) clearInterval(goodMoleInterval);
+    goodMoleInterval = setInterval(addGoodMole, 2000);
+  }
 }
 function moveGoodMole() {
   setInterval(addGoodMole, 2000);
@@ -173,7 +173,17 @@ function endGame(message) {
   gameScreen.style.display = "none";
   endGameResult.innerHTML = message;
   resultScreen.style.display = "block";
+  restartButton.forEach((button) => {
+    button.style.display = "block";
+  });
 }
+
+restartButton.forEach((button) => {
+  button.addEventListener("click", () => {
+    goToHome();
+  });
+});
+
 /**
  * Restart the game by reloading the page
 
@@ -181,8 +191,7 @@ function endGame(message) {
 /**404 reload page to take the user back to the landing page. */
 
 function goToHome() {
-       document.getElementById("menu-screen").style.display = "block";
-       document.getElementById("game-screen").style.display = "none";
-       document.getElementById("result-screen").style.display = "none";
+  document.getElementById("menu-screen").style.display = "block";
+  document.getElementById("game-screen").style.display = "none";
+  document.getElementById("result-screen").style.display = "none";
 }
-
