@@ -12,18 +12,30 @@ const endGameResult = document.getElementById("end-game-result");
 const cursor = document.querySelector(".cursor");
 
 /** Cursor movement (Credited from Angle Brace video) mentioned in read me */
-window.addEventListener("mousemove", (e) => {
-  cursor.style.top = e.pageY + "px";
-  cursor.style.left = e.pageX + "px";
-});
+function updateCursorPosition(e) {
+  if (cursor) {
+    cursor.style.top = e.pageY + "px";
+    cursor.style.left = e.pageX + "px";
+  }
+}
 
-window.addEventListener("mousedown", () => {
-  cursor.classList.add("active");
-});
+window.addEventListener("mousemove", updateCursorPosition);
 
-window.addEventListener("mouseup", () => {
-  cursor.classList.remove("active");
-});
+function activateCursor() {
+  if (cursor) {
+    cursor.classList.add("active");
+  }
+}
+
+window.addEventListener("mousedown", activateCursor);
+
+function deactivateCursor() {
+  if (cursor) {
+    cursor.classList.remove("active");
+  }
+}
+
+window.addEventListener("mouseup", deactivateCursor);
 
 let result = 0;
 let currentTime = 60;
@@ -57,7 +69,10 @@ function startGame() {
   moveGoodMole();
 
   // Start countdown
-  if (timerId) clearInterval(timerId);
+  if (timerId) {
+    clearInterval(timerId);
+    timerId = null;
+  }
   timerId = setInterval(countDown, 1000);
 }
 /** Function to add bad mole */
