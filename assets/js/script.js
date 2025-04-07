@@ -1,7 +1,6 @@
 /** Global variables */
 const startGameButton = document.querySelector("#start-button");
 const restartButton = document.querySelectorAll(".restart-button");
-const restartTheGame = document.querySelector(".restart-game");
 const menuScreen = document.querySelector("#menu-screen");
 const gameScreen = document.querySelector("#game-screen");
 const squares = document.querySelectorAll(".square");
@@ -43,9 +42,13 @@ let timerId = null;
 
 gameScreen.style.display = "none";
 resultScreen.style.display = "none";
-restartButton.forEach((button) => {
-  button.style.display = "none";
-});
+function hideRestartButtons() {
+  restartButton.forEach((button) => {
+    button.style.display = "none";
+  });
+}
+
+hideRestartButtons();
 
 /** Start Game */
 startGameButton.addEventListener("click", () => {
@@ -95,7 +98,7 @@ function addBadMole() {
 function addGoodMole() {
   squares.forEach((square) => square.classList.remove("good-mole"));
   let randomSquare = squares[Math.floor(Math.random() * squares.length)];
-  //While loop added to prevent good mole from appearing in the same square as bad mole
+  //While loop added to prevent good mole from appearing in the same square as bad mole//
   while (randomSquare.id == hitPositionCorrect) {
     randomSquare = squares[Math.floor(Math.random() * squares.length)];
   }
@@ -114,8 +117,14 @@ function addGoodMole() {
 function moveBadMole() {
   if (gameInterval) clearInterval(gameInterval);
   gameInterval = setInterval(addBadMole, 1000);
-}
+
 /** Move good moles */
+let goodMoleInterval = null;
+function moveGoodMole() {
+  if (goodMoleInterval) clearInterval(goodMoleInterval);
+  goodMoleInterval = setInterval(addGoodMole, 2000);
+}
+}
 function moveGoodMole() {
   setInterval(addGoodMole, 2000);
 }

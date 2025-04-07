@@ -13,7 +13,7 @@
     />
     <title>Guac-A-Mole</title>
     <link rel="stylesheet" href="assets/css/style.css" />
-    <!--Bootstrap CSS Script-->
+    <!-- Bootstrap CSS Script -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -23,8 +23,9 @@
 
   <body>
     <div class="wrapper">
-      <!--cursor-->
+      <!-- Cursor -->
       <div class="cursor"></div>
+
       <!-- Main Menu -->
       <div id="menu-screen">
         <h1>Guac-A-Mole</h1>
@@ -59,64 +60,64 @@
           <div class="square" id="8"></div>
           <div class="square" id="9"></div>
         </div>
-        <button class="restart-button" style="display: none">Restart</button>
+        <button class="restart-button">Restart</button>
       </div>
 
       <!-- Result Screen (Initially Hidden) -->
       <div id="result-screen">
         <h1>Guac-A-Mole</h1>
         <div id="end-game-result"></div>
-        <button class="restart-button" onclick="restartTheGame();">
-          Restart
-        </button>
+        <button class="restart-button" id="restart-button">Restart</button>
         <br />
-        <!--Feedback section-->
+
+        <!-- Feedback Section -->
         <div id="feedback" class="breakline">
           <h3>Feedback</h3>
           <p>Tell me what you think</p>
         </div>
-      
-          <!-- Feedback form-->
-          <form method="post" action="https://formdump.codeinstitute.net/">
-        <div class="feedback-form">
-          <div>
-            <label for="exampleFormControlInput1" class="form-label"
-              >Email address</label
-            >
-            <br />
-            <input
-              type="email"
-              class="form-control"
-              placeholder="name@email.com"
-        
-            />
-          </div>
-          <br />
-          <div>
-            <label for="exampleFormControlTextarea1" class="form-label"
-              >What could I do better?</label
-            >
-            <br />
-            <textarea
-              class="form-control"
-              id="textarea1"
-              placeholder="Leave a comment here"
-              rows="3"
-            ></textarea>
-          </div>
-          <br />
 
-          <button type="submit" class="btn btn-light">Submit</button>
-            </formm>
-      </div>
+        <!-- Feedback Form -->
+        <form method="post" action="https://formdump.codeinstitute.net/">
+          <div class="feedback-form">
+            <div>
+              <label for="exampleFormControlInput1" class="form-label">
+                Email address
+              </label>
+              <br />
+              <input
+                type="email"
+                class="form-control"
+                placeholder="name@email.com"
+                required
+              />
+              <br />
+            </div>
+            <div>
+              <label for="exampleFormControlTextarea1" class="form-label">
+                What could I do better?
+              </label>
+              <br />
+              <textarea
+                class="form-control"
+                id="textarea1"
+                placeholder="Leave a comment here"
+                rows="3"
+                required
+              ></textarea>
+              <br />
+              <button type="submit" class="btn btn-light">Submit</button>
+            </div>
+          </div> <!-- ✅ Closing feedback-form div -->
+        </form>
 
-      <!-- Audio -->
-      <audio src="assets/sounds/splatter.mp3" id="splatter"></audio>
-    </div>
-    <!-- Closing wrapper div -->
+        <!-- Audio -->
+        <audio src="assets/sounds/splatter.mp3" id="splatter"></audio>
+      </div> <!-- ✅ Closing result-screen -->
+
+    </div> <!-- ✅ Closing wrapper div -->
 
     <script src="assets/js/script.js"></script>
-    <!--Bootstrap JS Script-->
+    <!-- Bootstrap JS Script -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
       integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"

@@ -674,7 +674,7 @@ button {
     text-align: center;
     display: flex;
     justify-self: center;
-    width: 100%;
+    width: 25%;
     font-family: "Flavors", sans-serif !important;
     color: rgba(249, 228, 1, 0.949);
     background: none;
@@ -920,7 +920,7 @@ button {
     text-align: center;
     display: flex;
     justify-self: center;
-    width: 100%;
+    width: 20%;
     font-family: "Flavors", sans-serif !important;
     color: rgba(249, 228, 1, 0.949);
     background: none;
