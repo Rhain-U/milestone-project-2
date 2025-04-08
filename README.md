@@ -4,7 +4,7 @@ A fun Whack a mole game aimed at children between the ages of 6-10.
 
 [View the site from here.](https://rhain-u.github.io/milestone-project-2/)
 
-![screenshot to display the responsiveness of the site](/assets/images/responsive.jpg)
+![screenshot to display the responsiveness of the site](/assets/documentation/responsive.jpg)
 
 ## 1. User Experience
 
@@ -36,9 +36,9 @@ for both the good mole and bad mole I used Microsoft AI Designer. (https://desig
 
 ### Fonts & Colour schemes
 
-![Colour palette applied for font](../milestone-project-2/assets/images/font-colour-pallet.jpg)
-![Colour palette applied for holes](../milestone-project-2/assets/images/hole-colour-pallet-1.jpg)
-![Colour palette applied for hole shadows](../milestone-project-2/assets/images/hole-colour-pallet-2.jpg)
+![Colour palette applied for font](../milestone-project-2/assets/documentation/font-colour-pallet.jpg)
+![Colour palette applied for holes](../milestone-project-2/assets/documentation/hole-colour-pallet-1.jpg)
+![Colour palette applied for hole shadows](../milestone-project-2/assets/documentation/hole-colour-pallet-2.jpg)
 
 The colour scheme applied has been selected based on the tones of the background image. I chose to darken the background image and select a bright vibrant yellow for the text so it is easily readable and meets assessabilioty guidlines. I tested this with friends and family members to get clear feedback. I have also ran lighthouse tests on both mobile and desktop which came back almost 100%.
 
@@ -46,16 +46,16 @@ The colour scheme applied has been selected based on the tones of the background
 
 I used Balsamiq to create wireframes to help me visualize the layout of the site. Wireframes for mobile, tablet and desktop were created.
 
-![Balsamiq Mobile wireframe 1](//assets/images/mobile-home-wireframe.jpg)
-![Balsamiq Mobile wireframe 2](//assets/images/mobile-game-wireframe.jpg)
-![Balsamiq Mobile wireframe 3](//assets/images/mobile-results-wireframe.jpg)
-![Balsamiq Tablet Wireframe 1](//assets/images/tablet-home-wireframe.jpg)
-![Balsamiq Tablet Wireframe 2](//assets/images/tablet-game-wireframe.jpg)
-![Balsamiq Tablet Wireframe 3](//assets/images/tablet-results-wireframe.jpg)
-![Balsamiq Desktop Wireframe 1](//assets/images/desktop-home-wireframe.jpg)
-![Balsamiq Desktop Wireframe 2](//assets/images/desktop-game-wireframe.jpg)
-![Balsamiq Desktop Wireframe 3](//assets/images/desktop-results-wireframe.jpg)
-[Balsamiq 404 Wireframe](//assets/images/404-wireframe.jpg)
+![Balsamiq Mobile wireframe 1](../milestone-project-2/assets/documentation/mobile-home-wireframe.jpg)
+![Balsamiq Mobile wireframe 2](../milestone-project-2/assets/documentation/mobile-game-wireframe.jpg)
+![Balsamiq Mobile wireframe 3](/../milestone-project-2/assets/documentation/mobile-results-wireframe.jpg)
+![Balsamiq Tablet Wireframe 1](../milestone-project-2/assets/documentation/tablet-home-wireframe.jpg)
+![Balsamiq Tablet Wireframe 2](../milestone-project-2/assets/documentation/tablet-game-wireframe.jpg)
+![Balsamiq Tablet Wireframe 3](../milestone-project-2/assets/documentation/tablet-results-wireframe.jpg)
+![Balsamiq Desktop Wireframe 1](../milestone-project-2/assets/documentation/desktop-home-wireframe.jpg)
+![Balsamiq Desktop Wireframe 2](/../milestone-project-2/assets/documentation/desktop-game-wireframe.jpg)
+![Balsamiq Desktop Wireframe 3](../milestone-project-2/assets/documentation/desktop-results-wireframe.jpg)
+[Balsamiq 404 Wireframe](../milestone-project-2/assets/documentation/404-wireframe.jpg)
 
 ## 3. Features
 
