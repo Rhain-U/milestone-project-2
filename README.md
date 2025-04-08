@@ -1,6 +1,6 @@
 # Guac A Mole
 
-A fun Whack a mole game aimed at children between the ages of 6-10. 
+A fun Whack a mole game aimed at children between the ages of 6-10.
 
 [View the site from here.](https://rhain-u.github.io/milestone-project-2/)
 
@@ -15,22 +15,25 @@ The site is aimed at children ages 6-10 and its purpose is to help build on hand
 ### 1.1 User Stories
 
 #### Client Goals
-- Ability to  clearly understand the main aim of the game.
+
+- Ability to clearly understand the main aim of the game.
+- To be able to access this site on a range of different devices.
 - An easy-to-use game that is suitable children 6 and above as well as teenagers and adults.
-- Ability to clearly understand which mole to hit and know when it has been hit. 
+- Ability to clearly understand which mole to hit and know when it has been hit.
 
 #### Returning Client Goals
+
 - Bright and colourful display with a customised cursor.
 - Ability to restart the game.
 - Ability to provide feedback for further adaptations to the game.
 
-I have relied on these user stories to build the fundimentals of the game and keep on track of the end goals and to ensure that I have met all criteria. 
+I have relied on these user stories to build the fundimentals of the game and keep on track of the end goals and to ensure that I have met all criteria.
 
 ## 2. Design
 
 ### 2.1 Imagery
 
-For the background I chose an avocado themed background which I got from (https://pixabay.com/). I chose this as it is very colourful and entising. 
+For the background I chose an avocado themed background which I got from (https://pixabay.com/). I chose this as it is very colourful and entising.
 
 for both the good mole and bad mole I used Microsoft AI Designer. (https://designer.microsoft.com/image-creator)
 
@@ -63,11 +66,11 @@ The website consists of an index page with hidden pages within. The menu screen,
 
 ![Screenshot of the intro message](../milestone-project-2/assets/documentation/menu-screen.jpg)
 
-The User will land on the menu screen which will have the title of the game along with the rules of and start button. Once the start button is pressed it will take the user to the game screen where the timer will start to count down from 60 and stat with a score of 0. Every time the bad avocado is hit with the mallet a splatter sound will play and a score will be added to the scoreboard. 
+The User will land on the menu screen which will have the title of the game along with the rules of and start button. Once the start button is pressed it will take the user to the game screen where the timer will start to count down from 60 and stat with a score of 0. Every time the bad avocado is hit with the mallet a splatter sound will play and a score will be added to the scoreboard.
 
 ![image of game screen](../milestone-project-2/assets/documentation/game-screen.jpg)
 
-If the User clicks on the good mole it will nbe game over and it will take them to the results screen where they can see their total and a restart button which will take the user back to the homepage to play again. 
+If the User clicks on the good mole it will nbe game over and it will take them to the results screen where they can see their total and a restart button which will take the user back to the homepage to play again.
 
 There will also be a form below the restart button where the user can provide feedback on the game.
 
@@ -75,9 +78,9 @@ There will also be a form below the restart button where the user can provide fe
 
 Lastly I created a 404 error page with a button that will take the user back to the home screen if they land on it.
 
-![image of 404 error screen](../milestone-project-2/assets/documentation/)
+![image of 404 error screen](../milestone-project-2/assets/documentation/error-page-screenshot.jpg)
 
-I have applied a customer cursor which on clickdown rotates ns click up returns upright adding an extra element of fun to the game. I found this after watching a tutorial who I have credited below in the credit section. 
+I have applied a customer cursor which on clickdown rotates and click up returns upright mimicing a mallet hitting movement adding an extra element of fun to the game. I found this after watching a tutorial who I have credited below in the credit section.
 
 All of the pages other than that primary introductory section contain a restart button which navigate back to the very start.
 
@@ -95,18 +98,16 @@ All of the pages other than that primary introductory section contain a restart 
 - [Github](https://github.com/) - For version control and deployment
 - VS Code - used as the code editor and save files
 - [Google Fonts](https://fonts.google.com/) - to implement the fonts used in the site
-- [Font Awesome](https://fontawesome.com/) - for the start icon
 - Chrome dev tools - To test and troubleshoot various features and also test responsiveness of the pages.
-- [ChatGPT](https://chatgpt.com/) - to create the text and ai images which have been implemented on the results pages, and to help identify and trouble shoot the format and wording of the Javascript functions.
-- [JavaScript compiler](https://pythontutor.com/javascript.html#mode=edit) - to test the JavaScript code and functions before applying to script.js
-- [mdn](https://developer.mozilla.org/en-US/) - to research how to apply and implement JavaScript code and what tools would be ideal to be implemented in this project.
-- [javascript.info](https://javascript.info/dom-nodes) - to research further into JavaScript and how to apply
-- [npmjs.com](https://www.npmjs.com/package/js-confetti) and [Youtube tutorial to add confetti with JavaScript](https://www.youtube.com/watch?v=tTIaA1Xmzmg) - to learn how to implement the confetti effect
-- [Youtube tutorial](https://www.youtube.com/watch?v=Vp8x8-reqZA) - use for inspiration of how to structure a quiz using all three types of languages
-- [befunky.com](https://www.befunky.com/dashboard/) - to edit and resize the images used in the site
-- [Free Convert](https://www.freeconvert.com/jpg-to-webp) - to convert images to different file types
-- [Favicon.io](https://favicon.io/emoji-favicons/) - to create an emoji favicon 
-- [Amiresponsive](https://ui.dev/amiresponsive) - to show the website on a range of device screens
+- [ChatGPT](https://chatgpt.com/) - to help identify and trouble shoot the format and wording of the Javascript functions and help with some of the bugs I came across.
+- [JavaScript compiler](https://pythontutor.com/javascript.html#mode=edit) - to test the JavaScript code and functions before applying to script.js.
+- [javascript.info](https://javascript.info/dom-nodes) - to research further into JavaScript and how to apply.
+- [ Angle Brace Youtube tutorial to add the custom mallet cursor](https://www.youtube.com/watch?v=b20YueeXwZg) - to learn how to implement this into my project.
+- [Pixillion image converter](https://pixillion-free-image-converter.en.softonic.com/) - to convert images to different file types.
+- [Gimp](https://www.gimp.org/downloads/) - to edit my background image.
+- [Favicon.io](https://favicon.io/emoji-favicons/) - to create an emoji favicon.
+- [Flaticon] (https://www.flaticon.com/) - to find and a mallat used as the cursor.
+- [Amiresponsive](https://ui.dev/amiresponsive) - to show the website on a range of device screens.
 
 ## 5. Deployment & Local Development
 
@@ -125,27 +126,42 @@ The website is deployed using GitHub Pages. To Deploy the site using GitHub Page
 ### 6.1 Testing User Stories
 
 #### Client Goals
-##### Goal: To be able to view the site on a range of devices.
-Result- ✔ - The site is responsive on a number of browsers and devices.
-##### Goal: An easy-to-use format to proceed through the quiz.
-Result- ✔ - simple and clear format of how to step through each section and complete the quiz.
-##### Goal: Ability to clearly identify which option you have clicked on, and change selection before moving to the next question
-Result- ✔ - the selected option is highlighted and the option even expands subtly to clearly showcase the selection. The user also has the ability to change their selection before moving the the next question. 
+
+#### Goal: - Ability to clearly understand the main aim of the game.
+
+Result - ✔ - The site is erasy to use with clear title and rules of the game.
+
+##### Goal: - To be able to view the site on a range of devices.
+
+Result- ✔ - The site is responsive on a number of browsers and devices. ( some CSS is effected on Firefox browser.)
+
+##### Goal: - An easy-to-use game that is suitable children 6 and above as well as teenagers and adults.
+
+Result- ✔ - simple and clear format with bright colourful imagary texted on lighthouse to ensure it meets accessability guidlines.
+
+##### Goal: - Ability to clearly understand which mole to hit and know when it has been hit.
+
+Result- ✔ - Each of the moles are of a high image quality and have clear differences as one looks andy with lots of mud/ marks on and the good mole is happy with smily face and clean.
 
 #### Returning Client Goals
-##### Goal: Bright and engaging imagery without compromising visibility of the written content.
-Result- ✔ - The site includes relevant images, following a similar colour theme and is bright and engaging. 
 
-##### Goal: Ability to restart the quiz 
-Result- ✔ - A clear and obvious restart button is visible throughout the quiz and also on the final result page which navigates the user back to the start. 
+##### Goal: Bright and colourful display with a customised cursor.
 
-##### Goal: Ability to feedback on future destination suggestions
-Result- ✘ - Due to time constraints I was unable to include a feedback function however on future implementations this is something that I would consider to include.
+Result- ✔ - The site is very bright and enticing with colourful font in the hope that the user will want to return to play the game again and again.
+
+##### Goal: Ability to restart the quiz
+
+Result- ✔ - A clear and obvious restart button is visible on the results page giving the user the option to play again.
+
+##### Goal: - Ability to provide feedback for further adaptations to the game.
+
+Result- ✔ - There is a clear feedback section on the results page where the user can submit their thoughts on the game and what they would like to see added for future adaptions to the game.
 
 ### 6.2 Accessibility
-During the designing and styling process of the website, I have kept in mind to aim to make the page as user friendly and accessible as possible. I have achieved this by:
 
-Semantic HTML -Use of descriptive alt attributes on the images used throughout the site. -I have checked the colour scheme used on the page using [WebAIM](https://webaim.org/resources/contrastchecker/) to check the colour contrast.
+Throughout this project my aim has been to keep this simple as possible so that it is easy to understand by all ages and disabilities.
+
+I chose to use GIMP to darken the background so that the font is much more visable and clear.
 
 I have also used the chrome extension Web Disability Simulator to also consider the visuals of the page and contrast between the content for users with visual impairments.
 
@@ -155,52 +171,64 @@ Finally, as displayed in the Lighthouse testing in section 6.5 below, the scores
 
 ### 6.3 Fixing Bugs
 
-A number of issues have occurred during the development process of the site. 
+I came across multiple bugs whilst creating this project and managed to fix them all.
 
-#### Hiding and showing sections when required 
-When I initially planned the quiz I wanted the introduction section to appear initially and then once the quiz starts the intro section would be hidden and the quiz section would appear. I was unsure of how to make this process occur and so I carried out some research to try and learn how to create this functionality. 
+#### 2 moles occuplied the same hole.
 
- Initially I followed [CodeHal Youtube tutorial](https://www.youtube.com/watch?v=Vp8x8-reqZA), by creating 2 sections of the index page and swapping out sides of the page when required using CSS. 
- 
- However when testing the responsiveness of the site it became evident that this was creating issues with the layout of the background and creating additional white space. In addition when trying to add buttons on the page it was difficult to position due to these settings. I discussed this issue with my mentor Moritz and we identified that the issue was created by the split of the page. 
+Once I had built the game functions I soon realised that the game would end randomly even when the correct mole had been hit.
 
- Instead he advised to used the hidden styling and create a JavaScript function to hide and display the relevant sections at the relevant time. This was implemented using the query selector and adding an id to the relevant sections. This effectively allowed the site to function as I initially planned. 
+Firstly I check dev tools and realised that both moles were randomly occupying the same hole every few movements which would explain the game suddenly ending as both are being clicked at the same time. I did some reasearch into this on Stack overflow and W3 Schools and Slack but had no luck in fixing the issue at hand. 
 
- #### Page Loading and Unused JS 
- The JavaScript used on the index page and the JavaScript used on the results page run completely independently. When initially starting the projecting, all of the JS script was on a single page, however this created some issues with functionality and loading speed. 
+Secondly I used Chat GPT to try and resolve the issue but again no luck. Lastly I got in touch with tutor support who after some time working on it together realised that if a while loop was implimented on both the good and bad mole it would fix the issue at hand. 
 
- As the separate pages used the JS independently, it was not necessary for it all to be contained in a single js file and so two separate js files were created and the relevant one is linked on the relevant html page. This helped to improve the page load speed and functionality of the site. 
+I implimented the advised changes and this fixed the bug.
 
- #### Disabling the next/final button and tooltip
- I decided to add steps within the quiz to disable to next and finish button until an answer/option has been selected. This is because the initial functionality allowed the user to skip a question and this would affect the final result and not provide an accurate result. 
+- [While loop bug code](../milestone-project-2/assets/documentation/while-loop-bug.jpg)
 
- I initially set the button to inactive using CSS. Then I created a JS function to make the button active once an option has been selected. To build on this I also added a cursor pointer to show a no entry symbol when the button is disabled and to change to a pointer once an option has been selected. This is to indicate when the button is available for use. 
+#### Prettier bug
 
- On reflection although the cursor pointers provide an element of feedback to the user as to when the button functionality is active, I felt that some more clear guidance was required. I decided to add a tooltip function so that when the button is selected or hovered over without an option selected the tooltip alert would appear and alert the user that they need to make an option selection first. I used JS code to ensure that this alert is only visible when an option has not been selected.
- ![gif of the hover effect showing the tooltip and no entry pointer](/documentation/hover.gif)
+Whilst this bug wasnt the biggest bug to fix it was one of the most frustrating by far. I realiosed that whenever I tried to format my HTML the prettier symbol in the bottom right would flash red. This was due to a Syntax error and advied that there was an unexpected closing tag. 
 
- #### Creating the calculation to randomize the result in the event of a tie.
- After I created the calculation to push the relevant html page based on the results of the quiz, I identified that I needed a function to run in the event that there was a tie in the answers. I used the material from the JavaScript Data Types Modules to understand what features I might need to use however I struggled to create anything myself. 
+Resolution - I realised that the closing div to my wrapper div was missing. I replaced this and that fixed the bug.
 
- I reached out to other students in slack to see if anyone could make any suggestions of how this functionality could be achieved however was unable to get an answer through this format. I studied slack overflow and MDN webdocs and attempted various formats to implement this function. Finally i entered the initial calculation in chatGPT and requested it to consider additional calculations to help randomize a result. This helped me to create the specific calculation to randomize a result. 
+- [Syntaxerror bug](../milestone-project-2/assets/documentation/prettier-bug1.png)
 
- ![screenshot of the section of JS displaying the calculation](/documentation/random-calculation.png)
+
+#### Disabling the next/final button and tooltip
+
+I decided to add steps within the quiz to disable to next and finish button until an answer/option has been selected. This is because the initial functionality allowed the user to skip a question and this would affect the final result and not provide an accurate result.
+
+I initially set the button to inactive using CSS. Then I created a JS function to make the button active once an option has been selected. To build on this I also added a cursor pointer to show a no entry symbol when the button is disabled and to change to a pointer once an option has been selected. This is to indicate when the button is available for use.
+
+On reflection although the cursor pointers provide an element of feedback to the user as to when the button functionality is active, I felt that some more clear guidance was required. I decided to add a tooltip function so that when the button is selected or hovered over without an option selected the tooltip alert would appear and alert the user that they need to make an option selection first. I used JS code to ensure that this alert is only visible when an option has not been selected.
+![gif of the hover effect showing the tooltip and no entry pointer](/documentation/hover.gif)
+
+#### Creating the calculation to randomize the result in the event of a tie.
+
+After I created the calculation to push the relevant html page based on the results of the quiz, I identified that I needed a function to run in the event that there was a tie in the answers. I used the material from the JavaScript Data Types Modules to understand what features I might need to use however I struggled to create anything myself.
+
+I reached out to other students in slack to see if anyone could make any suggestions of how this functionality could be achieved however was unable to get an answer through this format. I studied slack overflow and MDN webdocs and attempted various formats to implement this function. Finally i entered the initial calculation in chatGPT and requested it to consider additional calculations to help randomize a result. This helped me to create the specific calculation to randomize a result.
+
+![screenshot of the section of JS displaying the calculation](/documentation/random-calculation.png)
 
 ### 6.4 Manual Testing
-Full testing has been completed on the following devices: 
-* Laptop: Macbook Air M3 2024
-* Mobile: Iphone 15
 
-The browsers used to test the site include: 
-* Google Chrome
-* Safari
-* Mozilla Firefox
+Full testing has been completed on the following devices:
+
+- Laptop: Macbook Air M3 2024
+- Mobile: Iphone 15
+
+The browsers used to test the site include:
+
+- Google Chrome
+- Safari
+- Mozilla Firefox
 
 ![table showing manual testing](/documentation/manual-testing.png)
 
 All of the manual testing yielded a positive result. During the development process, manual testing was ongoing, especially whilst building the JavaScript code as it was essential to ensure the functions being applied were working correctly and as expected. Chrome dev tools was used in this process, particularly the Console tool to identify any errors that were occurring in JavaScript and also using the AI assistance to identify how to resolve the issue.
 
-The site was also tested by numerous friends and family members who confirmed that the site was functioning as expected and they had a positive experience. 
+The site was also tested by numerous friends and family members who confirmed that the site was functioning as expected and they had a positive experience.
 
 ### 6.5 Lighthouse
 
