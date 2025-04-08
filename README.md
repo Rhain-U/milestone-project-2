@@ -183,7 +183,7 @@ Secondly I used Chat GPT to try and resolve the issue but again no luck. Lastly 
 
 I implimented the advised changes and this fixed the bug.
 
-- [While loop bug code](../milestone-project-2/assets/documentation/while-loop-bug.jpg)
+![image of While loop code](../milestone-project-2/assets/documentation/while-loop-bug.jpg)
 
 #### Prettier bug
 
@@ -191,44 +191,49 @@ Whilst this bug wasnt the biggest bug to fix it was one of the most frustrating 
 
 Resolution - I realised that the closing div to my wrapper div was missing. I replaced this and that fixed the bug.
 
-- [Syntaxerror bug](../milestone-project-2/assets/documentation/prettier-bug1.png)
+![image of syntax error](../milestone-project-2/assets/documentation/prettier-bug1.png)
 
 
-#### Disabling the next/final button and tooltip
+#### Cursor dissapearence 
 
-I decided to add steps within the quiz to disable to next and finish button until an answer/option has been selected. This is because the initial functionality allowed the user to skip a question and this would affect the final result and not provide an accurate result.
+I came across this bug whilst in the final stages of testing. The cursor would only appear on the edges of each screen and the results screen making it impossible to play the game as the user would not know where the cursor is. I used dev tools to identify the issue and used chatGPT for reasons why this issue may arrise which lead me to the answer very quickly. 
 
-I initially set the button to inactive using CSS. Then I created a JS function to make the button active once an option has been selected. To build on this I also added a cursor pointer to show a no entry symbol when the button is disabled and to change to a pointer once an option has been selected. This is to indicate when the button is available for use.
+This turned out to be quite a simple fix and was due to the cursor div in my index.html file being outside the wrapper div which all my other data was inside of. I moved it to the top within the wrapper div which solved the issue. 
 
-On reflection although the cursor pointers provide an element of feedback to the user as to when the button functionality is active, I felt that some more clear guidance was required. I decided to add a tooltip function so that when the button is selected or hovered over without an option selected the tooltip alert would appear and alert the user that they need to make an option selection first. I used JS code to ensure that this alert is only visible when an option has not been selected.
-![gif of the hover effect showing the tooltip and no entry pointer](/documentation/hover.gif)
+#### Restart button appearing on the game screen which would cause the game occasionally end.
 
-#### Creating the calculation to randomize the result in the event of a tie.
+I was running through checks on the deployed site when I came across a bug where the restart button would appear mid game which wouild cause the game to end. 
 
-After I created the calculation to push the relevant html page based on the results of the quiz, I identified that I needed a function to run in the event that there was a tie in the answers. I used the material from the JavaScript Data Types Modules to understand what features I might need to use however I struggled to create anything myself.
+I did some research on Stack overflow to see if nyone else had experienced anything like this before as well as dev tools to try to identify why this has suddenly started happening. I soon found out that it was because I had a style display as none on the game page when infact it should have been none. I made the changes in dev tools to begin with which worked, so then applied in vs code. This resolved the issue.
 
-I reached out to other students in slack to see if anyone could make any suggestions of how this functionality could be achieved however was unable to get an answer through this format. I studied slack overflow and MDN webdocs and attempted various formats to implement this function. Finally i entered the initial calculation in chatGPT and requested it to consider additional calculations to help randomize a result. This helped me to create the specific calculation to randomize a result.
-
-![screenshot of the section of JS displaying the calculation](/documentation/random-calculation.png)
+![image of restart button on game screen](../milestone-project-2/assets/documentation/ingame-restart-bug.jpg)
+![image of dev tools error code](../milestone-project-2/assets/documentation/restart-button-bug.png)
 
 ### 6.4 Manual Testing
 
 Full testing has been completed on the following devices:
 
-- Laptop: Macbook Air M3 2024
-- Mobile: Iphone 15
+- Laptop: Lenovo Ideapad 3
+- Mobile: Google pixel 9
 
 The browsers used to test the site include:
 
 - Google Chrome
-- Safari
-- Mozilla Firefox
+- Microsoft Edge
+- Mozilla Firefox (Some CSS differences. did not work properly on this browser.)
 
-![table showing manual testing](/documentation/manual-testing.png)
+#### My understanding of TDD (Test driven development)
 
-All of the manual testing yielded a positive result. During the development process, manual testing was ongoing, especially whilst building the JavaScript code as it was essential to ensure the functions being applied were working correctly and as expected. Chrome dev tools was used in this process, particularly the Console tool to identify any errors that were occurring in JavaScript and also using the AI assistance to identify how to resolve the issue.
+- Sure! Test Driven Development (TDD) is a software development approach where you write tests before you write the actual code. It follows a simple cycle often summarized as Red-Green-Refactor:
 
-The site was also tested by numerous friends and family members who confirmed that the site was functioning as expected and they had a positive experience.
+- The TDD Cycle:
+- Red – Write a test for a new function or feature. It should fail at first because the functionality doesn't exist yet.
+
+- Green – Write the minimum amount of code necessary to make the test pass.
+
+- Refactor – Clean up the code while making sure the test still passes.
+
+
 
 ### 6.5 Lighthouse
 
