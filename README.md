@@ -264,38 +264,29 @@ The main issues identified across the site were in relation to Bootstrap which I
 
 ##### HTML - [index.html](index.html)
 
-![screenshot of html validator results for the index page](/documentation/html-val-index.webp)
+![screenshot of the index.html validator pass](/assets/documentation/index-validator-pass.jpg)
 
-The initial check highlighted a few issues with the code. These issues have now been addressed and all of the html code on the homepage has successfully passed the html validation.
-![screenshot of final html validator results](/documentation/html-val-index-2.webp)
+The initial check highlighted a few issues with the code. 
 
-##### HTML - [japan.html](japan.html)
+These issues have now been addressed and all of the html code on the homepage has successfully passed the html validation.
 
-![screenshot of html validator results for the japan page](/documentation/html-val-japan.webp)
+##### HTML - [404.html](404.html)
 
-The initial check highlighted a few issues with the code. These issues have now been addressed and all of the html code on the Japan result page has successfully passed the html validation.
-![screenshot of final html validator results](/documentation/html-val-index-2.webp)
+![screenshot of the index.html validator pass](/assets/documentation/error-index-validator-pass.jpg)
 
-##### HTML - [kenya.html](kenya.html)
+The initial check highlighted a few issues with the code. 
 
-![screenshot of html validator results for the kenya page](/documentation/html-val-kenya.webp)
+These issues have now been addressed and all of the html code on the homepage has successfully passed the html validation.
 
-The initial check highlighted a few issues with the code. These issues have now been addressed and all of the html code on the Kenya result page has successfully passed the html validation.
-![screenshot of final html validator results](/documentation/html-val-index-2.webp)
-
-##### HTML - [barbados.html](barbados.html)
-
-![screenshot of final html validator results](/documentation/html-val-index-2.webp)
-
-The initial check did not highlight any issues with the code on the Barbados result page.
 
 ##### CSS Stylesheet
 
-Please view this [link](http://jigsaw.w3.org/css-validator/validator?lang=en&profile=css3svg&uri=https%3A%2F%2Fchandni-l5.github.io%2Fideal-destination%2F&usermedium=all&vextwarning=&warning=1) to see the results of the CSS validation which has passed checks. Although there are 2 warning messages shown no further action is required as these are related to shortfalls of certain browsers.
+I used [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) to sense check all CSS code before submittion
 
-#### 6.6.2 Autoprefixer CSS
+##### CSS - [style.css](style.css)
 
-I have used [Autoprefixer](https://autoprefixer.githib.io) to add vendor prefixes to the CSS.
+![screenshot of the style.css validator pass](/assets/documentation/css-validator-pass.jpg)
+
 
 #### 6.6.3 JS jshint
 
