@@ -55,25 +55,29 @@ I used Balsamiq to create wireframes to help me visualize the layout of the site
 ![Balsamiq Desktop Wireframe 1](../milestone-project-2/assets/documentation/desktop-home-wireframe.jpg)
 ![Balsamiq Desktop Wireframe 2](/../milestone-project-2/assets/documentation/desktop-game-wireframe.jpg)
 ![Balsamiq Desktop Wireframe 3](../milestone-project-2/assets/documentation/desktop-results-wireframe.jpg)
-[Balsamiq 404 Wireframe](../milestone-project-2/assets/documentation/404-wireframe.jpg)
+![Balsamiq error page Wireframe](../milestone-project-2/assets/documentation/error-page.jpg)
 
 ## 3. Features
 
 The website consists of an index page with hidden pages within. The menu screen, game screen and results screen. Each will be shown once in turn once the start button has been clicked. I have also included a 404 error page.
 
-![Screenshot of the intro message](//assets/images/menu-screen.jpg)
+![Screenshot of the intro message](../milestone-project-2/assets/documentation/menu-screen.jpg)
 
 The User will land on the menu screen which will have the title of the game along with the rules of and start button. Once the start button is pressed it will take the user to the game screen where the timer will start to count down from 60 and stat with a score of 0. Every time the bad avocado is hit with the mallet a splatter sound will play and a score will be added to the scoreboard. 
 
-![image of game screen](//assets/images/game-screen.jpg)
+![image of game screen](../milestone-project-2/assets/documentation/game-screen.jpg)
 
 If the User clicks on the good mole it will nbe game over and it will take them to the results screen where they can see their total and a restart button which will take the user back to the homepage to play again. 
 
 There will also be a form below the restart button where the user can provide feedback on the game.
 
-![image of game screen](//assets/images/results-screen.jpg)
+![image of game screen](../milestone-project-2/assets/documentation/results-screen.jpg)
 
-I have applied a customer cursor which on clickdown rotates ns click up returns upright adding an extra element of fun to the game. I found this after watching a tutorial who I have credited below. 
+Lastly I created a 404 error page with a button that will take the user back to the home screen if they land on it.
+
+![image of 404 error screen](../milestone-project-2/assets/documentation/)
+
+I have applied a customer cursor which on clickdown rotates ns click up returns upright adding an extra element of fun to the game. I found this after watching a tutorial who I have credited below in the credit section. 
 
 All of the pages other than that primary introductory section contain a restart button which navigate back to the very start.
 
