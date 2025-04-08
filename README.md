@@ -177,9 +177,9 @@ I came across multiple bugs whilst creating this project and managed to fix them
 
 Once I had built the game functions I soon realised that the game would end randomly even when the correct mole had been hit.
 
-Firstly I check dev tools and realised that both moles were randomly occupying the same hole every few movements which would explain the game suddenly ending as both are being clicked at the same time. I did some reasearch into this on Stack overflow and W3 Schools and Slack but had no luck in fixing the issue at hand. 
+Firstly I check dev tools and realised that both moles were randomly occupying the same hole every few movements which would explain the game suddenly ending as both are being clicked at the same time. I did some reasearch into this on Stack overflow and W3 Schools and Slack but had no luck in fixing the issue at hand.
 
-Secondly I used Chat GPT to try and resolve the issue but again no luck. Lastly I got in touch with tutor support who after some time working on it together realised that if a while loop was implimented on both the good and bad mole it would fix the issue at hand. 
+Secondly I used Chat GPT to try and resolve the issue but again no luck. Lastly I got in touch with tutor support who after some time working on it together realised that if a while loop was implimented on both the good and bad mole it would fix the issue at hand.
 
 I implimented the advised changes and this fixed the bug.
 
@@ -187,22 +187,21 @@ I implimented the advised changes and this fixed the bug.
 
 #### Prettier bug
 
-Whilst this bug wasnt the biggest bug to fix it was one of the most frustrating by far. I realiosed that whenever I tried to format my HTML the prettier symbol in the bottom right would flash red. This was due to a Syntax error and advied that there was an unexpected closing tag. 
+Whilst this bug wasnt the biggest bug to fix it was one of the most frustrating by far. I realiosed that whenever I tried to format my HTML the prettier symbol in the bottom right would flash red. This was due to a Syntax error and advied that there was an unexpected closing tag.
 
 Resolution - I realised that the closing div to my wrapper div was missing. I replaced this and that fixed the bug.
 
 ![image of syntax error](../milestone-project-2/assets/documentation/prettier-bug1.png)
 
+#### Cursor dissapearence
 
-#### Cursor dissapearence 
+I came across this bug whilst in the final stages of testing. The cursor would only appear on the edges of each screen and the results screen making it impossible to play the game as the user would not know where the cursor is. I used dev tools to identify the issue and used chatGPT for reasons why this issue may arrise which lead me to the answer very quickly.
 
-I came across this bug whilst in the final stages of testing. The cursor would only appear on the edges of each screen and the results screen making it impossible to play the game as the user would not know where the cursor is. I used dev tools to identify the issue and used chatGPT for reasons why this issue may arrise which lead me to the answer very quickly. 
-
-This turned out to be quite a simple fix and was due to the cursor div in my index.html file being outside the wrapper div which all my other data was inside of. I moved it to the top within the wrapper div which solved the issue. 
+This turned out to be quite a simple fix and was due to the cursor div in my index.html file being outside the wrapper div which all my other data was inside of. I moved it to the top within the wrapper div which solved the issue.
 
 #### Restart button appearing on the game screen which would cause the game occasionally end.
 
-I was running through checks on the deployed site when I came across a bug where the restart button would appear mid game which wouild cause the game to end. 
+I was running through checks on the deployed site when I came across a bug where the restart button would appear mid game which wouild cause the game to end.
 
 I did some research on Stack overflow to see if nyone else had experienced anything like this before as well as dev tools to try to identify why this has suddenly started happening. I soon found out that it was because I had a style display as none on the game page when infact it should have been none. I made the changes in dev tools to begin with which worked, so then applied in vs code. This resolved the issue.
 
@@ -224,24 +223,38 @@ The browsers used to test the site include:
 
 #### My understanding of TDD (Test driven development)
 
-- Sure! Test Driven Development (TDD) is a software development approach where you write tests before you write the actual code. It follows a simple cycle often summarized as Red-Green-Refactor:
+- Test Driven Development (TDD) is a software development approach where you write tests before you write the actual code. It follows a simple cycle often summarized as Red-Green-Refactor.
 
-- The TDD Cycle:
+#### The TDD Cycle:
+
 - Red – Write a test for a new function or feature. It should fail at first because the functionality doesn't exist yet.
 
 - Green – Write the minimum amount of code necessary to make the test pass.
 
 - Refactor – Clean up the code while making sure the test still passes.
 
+#### My understanding of BDD (Behaviour Driven development)
 
+- BDD is like an evolution of TDD, but it focuses more on the behavior of the system from the user’s perspective. Instead of writing tests about the code, you describe how the application should behave using plain language that's easy for developers, testers, and non-technical team members to understand.
+
+#### My Approach.
+
+- I used more of a TDD approach, writing small batches of code and testing to ensure it worked before complicating it too much, especially when it came to writing JavaScript. I Used JavaScript compiler to get the basic functiions correct first then with the help of stack overflow, Slack, Chat GPT and Co pilot I would build on them to create the functions i needed.
+
+- I also tested the game out on family members and friends to get their feedback which was all positive.
 
 ### 6.5 Lighthouse
 
-Please select this [link](lighthouse.md) to view screenshots of the lighthouse analysis.
+Please see below screenshots for both Mobile and Desktop.
 
-The main issues identified across the site were in relation to the speed at which the page and content loads and issues with cumulative layout shifts and image sizing. I implemented some changes by preloading some of the external content as the page loads and adding a height to the `<img>` tag in CSS.
+Mobile
+![image of lighthouse mobile](../milestone-project-2/assets/documentation/lighthouse-mobile.jpg)
 
-On checking the site through lighthouse after the changes were made, this improved the scores greatly.
+Desktop
+![image of lighthouse desktop](../milestone-project-2/assets/documentation/lighthouse-desktop.jpg)
+
+The main issues identified across the site were in relation to Bootstrap which I didnt know how to fix or if that is something i could infact change. 
+
 
 ### 6.6 Validation
 
