@@ -42,6 +42,7 @@ let hitPositionWrong = null;
 let gameInterval = null;
 let timerId = null;
 
+/**Function to hide restart button until user lands on results page. */
 gameScreen.style.display = "none";
 resultScreen.style.display = "none";
 function hideRestartButtons() {
