@@ -80,11 +80,11 @@ for both the good mole and bad mole I used Microsoft AI Designer. (https://desig
 
  
 
-![Colour palette applied for font](../milestone-project-2/assets/documentation/font-colour-pallet.jpg) 
+![Colour palette applied for font](assets/documentation/font-colour-pallet.jpg) 
 
-![Colour palette applied for holes](../milestone-project-2/assets/documentation/hole-colour-pallet-1.jpg) 
+![Colour palette applied for holes](assets/documentation/hole-colour-pallet-1.jpg) 
 
-![Colour palette applied for hole shadows](../milestone-project-2/assets/documentation/hole-colour-pallet-2.jpg) 
+![Colour palette applied for hole shadows](assets/documentation/hole-colour-pallet-2.jpg) 
 
  
 
@@ -100,25 +100,25 @@ I used Balsamiq to create wireframes to help me visualize the layout of the site
 
  
 
-![Balsamiq Mobile wireframe 1](../milestone-project-2/assets/documentation/mobile-home-wireframe.jpg) 
+![Balsamiq Mobile wireframe 1](assets/documentation/mobile-home-wireframe.jpg) 
 
-![Balsamiq Mobile wireframe 2](../milestone-project-2/assets/documentation/mobile-game-wireframe.jpg) 
+![Balsamiq Mobile wireframe 2](assets/documentation/mobile-game-wireframe.jpg) 
 
-![Balsamiq Mobile wireframe 3](/../milestone-project-2/assets/documentation/mobile-results-wireframe.jpg) 
+![Balsamiq Mobile wireframe 3](assets/documentation/mobile-results-wireframe.jpg) 
 
-![Balsamiq Tablet Wireframe 1](../milestone-project-2/assets/documentation/tablet-home-wireframe.jpg) 
+![Balsamiq Tablet Wireframe 1](assets/documentation/tablet-home-wireframe.jpg) 
 
-![Balsamiq Tablet Wireframe 2](../milestone-project-2/assets/documentation/tablet-game-wireframe.jpg) 
+![Balsamiq Tablet Wireframe 2](assets/documentation/tablet-game-wireframe.jpg) 
 
-![Balsamiq Tablet Wireframe 3](../milestone-project-2/assets/documentation/tablet-results-wireframe.jpg) 
+![Balsamiq Tablet Wireframe 3](assets/documentation/tablet-results-wireframe.jpg) 
 
-![Balsamiq Desktop Wireframe 1](../milestone-project-2/assets/documentation/desktop-home-wireframe.jpg) 
+![Balsamiq Desktop Wireframe 1](assets/documentation/desktop-home-wireframe.jpg) 
 
-![Balsamiq Desktop Wireframe 2](/../milestone-project-2/assets/documentation/desktop-game-wireframe.jpg) 
+![Balsamiq Desktop Wireframe 2](assets/documentation/desktop-game-wireframe.jpg) 
 
-![Balsamiq Desktop Wireframe 3](../milestone-project-2/assets/documentation/desktop-results-wireframe.jpg) 
+![Balsamiq Desktop Wireframe 3](assets/documentation/desktop-results-wireframe.jpg) 
 
-![Balsamiq error page Wireframe](../milestone-project-2/assets/documentation/error-page.jpg) 
+![Balsamiq error page Wireframe](assets/documentation/error-page.jpg) 
 
  
 
@@ -130,7 +130,7 @@ The website consists of an index page with hidden pages within. The menu screen,
 
  
 
-![Screenshot of the intro message](../milestone-project-2/assets/documentation/menu-screen.jpg) 
+![Screenshot of the intro message](assets/documentation/menu-screen.jpg) 
 
  
 
@@ -138,7 +138,7 @@ The User will land on the menu screen which will have the title of the game alon
 
  
 
-![image of game screen](../milestone-project-2/assets/documentation/game-screen.jpg) 
+![image of game screen](assets/documentation/game-screen.jpg) 
 
  
 
@@ -150,7 +150,7 @@ There will also be a form below the restart button where the user can provide fe
 
  
 
-![image of game screen](../milestone-project-2/assets/documentation/results-screen.jpg) 
+![image of game screen](assets/documentation/results-screen.jpg) 
 
  
 
@@ -158,7 +158,7 @@ Lastly, I created a 404-error page with a button that will take the user back to
 
  
 
-![image of 404 error screen](../milestone-project-2/assets/documentation/error-page-screenshot.jpg) 
+![image of 404 error screen](assets/documentation/error-page-screenshot.jpg) 
 
  
 
@@ -368,7 +368,7 @@ I implemented the advised changes and this fixed the bug.
 
  
 
-![image of While loop code](../milestone-project-2/assets/documentation/while-loop-bug.jpg) 
+![image of While loop code](assets/documentation/while-loop-bug.jpg) 
 
  
 
@@ -384,7 +384,7 @@ Resolution - I realised that the closing div to my wrapper div was missing. I re
 
  
 
-![image of syntax error](../milestone-project-2/assets/documentation/prettier-bug1.png) 
+![image of syntax error](assets/documentation/prettier-bug1.png) 
 
  
 
@@ -412,9 +412,9 @@ I did some research on Stack overflow to see if anyone else had experienced anyt
 
  
 
-![image of restart button on game screen] (../milestone-project-2/assets/documentation/ingame-restart-bug.jpg) 
+![image of restart button on game screen](assets/documentation/ingame-restart-bug.jpg) 
 
-![image of dev tools error code] (../milestone-project-2/assets/documentation/restart-button-bug.png) 
+![image of dev tools error code](assets/documentation/restart-button-bug.png) 
 
  
 
@@ -498,13 +498,13 @@ Please see below screenshots for both Mobile and Desktop.
 
 Mobile 
 
-![image of lighthouse mobile](../milestone-project-2/assets/documentation/lighthouse-mobile.jpg) 
+![image of lighthouse mobile](assets/documentation/lighthouse-mobile.jpg) 
 
  
 
 Desktop 
 
-![image of lighthouse desktop](../milestone-project-2/assets/documentation/lighthouse-desktop.jpg) 
+![image of lighthouse desktop](assets/documentation/lighthouse-desktop.jpg) 
 
  
 
@@ -530,7 +530,7 @@ The main issues identified across the site were in relation to Bootstrap which I
 
  
 
-![screenshot of the index.html validator pass](/assets/documentation/index-validator-pass.jpg) 
+![screenshot of the index.html validator pass](assets/documentation/index-validator-pass.jpg) 
 
  
 
@@ -546,7 +546,7 @@ These issues have now been addressed and all the html code on the homepage has s
 
  
 
-![screenshot of the index.html validator pass](/assets/documentation/error-index-validator-pass.jpg) 
+![screenshot of the index.html validator pass](assets/documentation/error-index-validator-pass.jpg) 
 
  
 
@@ -572,7 +572,7 @@ I used [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) to sense check 
 
  
 
-![screenshot of the style.css validator pass](/assets/documentation/css-validator-pass.jpg) 
+![screenshot of the style.css validator pass](assets/documentation/css-validator-pass.jpg) 
 
  
 
@@ -586,7 +586,7 @@ The JavaScript code has been validated through [JsHint](https://jshint.com/).
 
  
 
-![result of running script.js through JSHint](/assets/documentation/jshint.jpg) 
+![result of running script.js through JSHint](assets/documentation/jshint.jpg) 
 
  
 
