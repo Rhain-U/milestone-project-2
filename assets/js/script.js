@@ -13,6 +13,7 @@ const resultScreen = document.getElementById("result-screen");
 const endGameResult = document.getElementById("end-game-result");
 const cursor = document.querySelector(".cursor");
 
+
 /** Cursor movement (Credited from Angle Brace video) mentioned in read me */
 function updateCursorPosition(e) {
   if (cursor) {
