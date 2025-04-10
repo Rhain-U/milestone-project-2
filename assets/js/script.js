@@ -190,8 +190,17 @@ restartButton.forEach((button) => {
   });
 });
 
-/**
- * Restart the game by reloading the page
+/**Function to mute the sound. */
+
+const muteButton = document.getElementById("#mute-button")
+const audio = document.getElementById(".my-audio")
+
+muteButton.addEventListener("click", () => {
+  audio.muted = !audio.muted;
+  muteButton.textContect = audio.muted ? "Unmute" : "Mute";
+
+  console.log(muteButton);
+})
 
 
 /**404 reload page to take the user back to the landing page. */

@@ -42,6 +42,7 @@
           <li>Have a guacing good time!</li>
         </ul>
         <button id="start-button" onclick="startGame()">Start Game!</button>
+        
       </div>
 
       <!-- Game Screen (Initially Hidden) -->
@@ -113,16 +114,18 @@
               <br />
               <button type="submit" class="btn btn-light">Submit</button>
             </div>
-          </div> <!-- ✅ Closing feedback-form div -->
+          </div> <!--Closing feedback-form div -->
         </form>
 
         <!-- Audio -->
-        <audio src="assets/sounds/splatter.mp3" id="splatter"></audio>
-      </div> <!-- ✅ Closing result-screen -->
 
-    </div> <!-- ✅ Closing wrapper div -->
+        <audio src="assets/sounds/splatter.mp3" id="splatter" class="my-audio"></audio>
+        <button type="button" id="mute-button" onclick="muteButton()"><img src="assets/images/mute.png" alt="an icon of speaker with no volume."></button>
+      </div> <!--Closing result-screen -->
 
-    <script src="assets/js/script.js"></script>
+    </div> <!--Closing wrapper div -->
+
+    <script src="assets/js/script.js"></script> 
     <!-- Bootstrap JS Script -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
