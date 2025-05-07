@@ -83,9 +83,8 @@ function startGame() {
 function addBadMole() {
   squares.forEach((square) => square.classList.remove("bad-mole"));
   let randomSquare = squares[Math.floor(Math.random() * squares.length)];
-  /**
-   * While loop added to prevent good mole from appearing in the same square as bad mole
-   */
+  // While loop added to prevent good mole from appearing
+  // in the same square as bad mole
 
   while (randomSquare.id == hitPositionWrong) {
     randomSquare = squares[Math.floor(Math.random() * squares.length)];
@@ -106,9 +105,9 @@ function addGoodMole() {
   squares.forEach((square) => square.classList.remove("good-mole"));
   let randomSquare = squares[Math.floor(Math.random() * squares.length)];
 
-  /**
-   * While loop added to prevent good mole from appearing in the same square as bad mole
-   * */
+  // While loop added to prevent bad mole from appearing
+// in the same square as good mole
+
   while (randomSquare.id == hitPositionCorrect) {
     randomSquare = squares[Math.floor(Math.random() * squares.length)];
   }
