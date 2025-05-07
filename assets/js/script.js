@@ -168,12 +168,14 @@ function countDown() {
     clearInterval(timerId);
     clearInterval(gameInterval);
 
-    message = `
+    let message = `
         <h2>Game over...</h2>
-        <p class ="game-over" >You managed to last a minute, not bad at all. Your score 
+        <p class ="game-over">
+        You managed to last a minute, not bad at all. Your score
         was ${result},</p>
         
-        <p class =" game-over" >Maybe you can do a lot better next time!</p>
+        <p class="game-over"
+        >Maybe you can do a lot better next time!</p>
         `;
     endGame(message);
   }
