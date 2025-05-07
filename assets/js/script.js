@@ -83,7 +83,10 @@ function startGame() {
 function addBadMole() {
   squares.forEach((square) => square.classList.remove("bad-mole"));
   let randomSquare = squares[Math.floor(Math.random() * squares.length)];
-  //While loop added to prevent good mole from appearing in the same square as bad mole
+  /**
+   * While loop added to prevent good mole from appearing in the same square as bad mole
+   */
+
   while (randomSquare.id == hitPositionWrong) {
     randomSquare = squares[Math.floor(Math.random() * squares.length)];
   }
@@ -102,7 +105,10 @@ function addBadMole() {
 function addGoodMole() {
   squares.forEach((square) => square.classList.remove("good-mole"));
   let randomSquare = squares[Math.floor(Math.random() * squares.length)];
-  //While loop added to prevent good mole from appearing in the same square as bad mole//
+
+  /**
+   * While loop added to prevent good mole from appearing in the same square as bad mole
+   * */
   while (randomSquare.id == hitPositionCorrect) {
     randomSquare = squares[Math.floor(Math.random() * squares.length)];
   }
@@ -121,16 +127,12 @@ function addGoodMole() {
 function moveBadMole() {
   if (gameInterval) clearInterval(gameInterval);
   gameInterval = setInterval(addBadMole, 1000);
+}
 
-  /** Move good moles */
-  let goodMoleInterval = null;
-  function moveGoodMole() {
-    if (goodMoleInterval) clearInterval(goodMoleInterval);
-    goodMoleInterval = setInterval(addGoodMole, 2000);
-  }
-  restartButton.forEach((button) => {
-    button.style.display = "none";
-  });
+/** Move good moles */
+function moveGoodMole() {
+  if (gameInterval) clearInterval(gameInterval);
+  gameInterval = setInterval(addGoodMole, 2000);
 }
 function moveGoodMole() {
   setInterval(addGoodMole, 2000);
@@ -145,9 +147,9 @@ squares.forEach((square) => {
       splatterSound.play();
     }
     if (square.id === hitPositionWrong) {
-      message = `
+      let message = `
             <h2>Game over...</h2>
-            <p class ="game-over" >You hit good mole, Your score is ${result}
+            <p class="game-over">You hit good mole, Your score is ${result}
             </p>
         
             <p class =" game-over" >Maybe you can do a lot better next time!</p>
