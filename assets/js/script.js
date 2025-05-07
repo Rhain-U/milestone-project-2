@@ -124,13 +124,15 @@ function addGoodMole() {
 
 /** Move bad moles */
 function moveBadMole() {
-  if (gameInterval) clearInterval(gameInterval);
+  if (gameInterval) {
+  clearInterval(gameInterval);
+  }
   gameInterval = setInterval(addBadMole, 1000);
 }
 
 /** Move good moles */
 function moveGoodMole() {
-  if (gameInterval) clearInterval(gameInterval);
+  if (gameInterval) clearInterval (gameInterval);
   gameInterval = setInterval(addGoodMole, 2000);
 }
 function moveGoodMole() {
@@ -150,7 +152,6 @@ squares.forEach((square) => {
             <h2>Game over...</h2>
             <p class="game-over">You hit good mole, Your score is ${result}
             </p>
-        
             <p class =" game-over" >Maybe you can do a lot better next time!</p>
             `;
       endGame(message);
@@ -172,9 +173,8 @@ function countDown() {
         <p class ="game-over">
         You managed to last a minute, not bad at all. Your score
         was ${result},</p>
-        
-        <p class="game-over"
-        >Maybe you can do a lot better next time!</p>
+        <p class="game-over">
+        Maybe you can do a lot better next time!</p>
         `;
     endGame(message);
   }

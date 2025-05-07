@@ -480,7 +480,7 @@ The browsers used to test the site include:
 
  
 
-- I used more of a TDD approach, writing small batches of code and testing to ensure it worked before complicating it too much, especially when it came to writing JavaScript. I Used JavaScript compiler to get the basic functions correct first then with the help of stack overflow, Slack, Chat GPT and Copilot I would build on them to create the functions I needed. 
+- I used more of a BDD approach, writing small batches of code and testing to ensure it worked before complicating it too much, especially when it came to writing JavaScript. I Used JavaScript compiler to get the basic functions correct first then with the help of stack overflow, Slack, Chat GPT and Copilot I would build on them to create the functions I needed. 
 
  
 
