@@ -58,21 +58,8 @@ The site is aimed at children ages 6-10 and its purpose is to help build on hand
 
 I have relied on these user stories to build the fundamentals of the game and keep on track of the end goals and to ensure that I have met all criteria. 
 
-#### Client Goal examples
-
-![screenshot of example client goal 1, "Ability to clearly understand the main aim of the game"](/assets/documentation/menu-screen.jpg)
-
-- This example clearly shows the rules of the game in a fun, inviting font that attracts all ages. 
-
-![screenshot of example client goal 2, "Ability to clearly understand the main aim of the game"](/assets/documentation/responsive.jpg)
-
-- I used Responsive to demonstrate that the game can be played on all screen sizes. I have also tested this game on my mobile device and it works great.
-
-![screenshot of example client goal 3, "Ability to clearly understand which mole to hit and know when it has been hit"](/assets/documentation/game-screen.jpg)
-
 #### Returning Client Goals examples
 
-![screenshot of example client goal 2 & 3, "Ability to clearly understand the main aim of the game"](/assets/documentation/results-screen.jpg)
 
 ## 2. Design 
 
@@ -276,29 +263,26 @@ The website is deployed using GitHub Pages. To Deploy the site using GitHub Page
 
 Result - ✔ - The site is easy to use with clear title and rules of the game. 
 
- 
+![screenshot of example client goal 1, "Ability to clearly understand the main aim of the game"](/assets/documentation/menu-screen.jpg)
 
 ##### Goal: - To be able to view the site on a range of devices. 
 
  
-
 Result- ✔ - The site is responsive on several browsers and devices. (Some CSS is affected on Firefox browser.) 
 
- 
-
-##### Goal: - An easy-to-use game that is suitable children 6 and above as well as teenagers and adults. 
+![screenshot of example client goal 2, "Ability to clearly understand the main aim of the game"](/assets/documentation/responsive.jpg)
 
  
+ ##### Goal: - An easy-to-use game that is suitable children 6 and above as well as teenagers and adults. 
+
 
 Result- ✔ - simple and clear format with bright colourful imagery texted on lighthouse to ensure it meets accessibility guidelines. 
 
- 
+ ##### Goal: - Ability to clearly understand which mole to hit and know when it has been hit. 
 
-##### Goal: - Ability to clearly understand which mole to hit and know when it has been hit. 
+ Result- ✔ - Each of the moles are of a high image quality and have clear differences as one looks angry with lots of mud/ marks on and the good mole is happy with Smily face and clean. 
 
- 
-
-Result- ✔ - Each of the moles are of a high image quality and have clear differences as one looks angry with lots of mud/ marks on and the good mole is happy with Smily face and clean. 
+ ![screenshot of example client goal 3, "Ability to clearly understand which mole to hit and know when it has been hit"](/assets/documentation/game-screen.jpg)
 
  
 
@@ -320,7 +304,8 @@ Result- ✔ - The site is very bright and enticing with colourful font in the ho
 
 Result- ✔ - A clear and obvious restart button is visible on the results page giving the user the option to play again. 
 
- 
+![screenshot of example client goal 2 & 3, "Ability to clearly understand the main aim of the game"](/assets/documentation/results-screen.jpg)
+
 
 ##### Goal: - Ability to provide feedback for further adaptations to the game. 
 
