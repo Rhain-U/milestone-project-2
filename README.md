@@ -593,7 +593,7 @@ The JavaScript code has been validated through [JsHint](https://jshint.com/).
 
  
 
-![result of running script.js through JSHint](assets/documentation/jshint.jpg) 
+![result of running script.js through JSHint](assets/documentation/jshint-v2.jpg) 
 
  
 
