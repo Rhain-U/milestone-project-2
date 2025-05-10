@@ -481,7 +481,15 @@ The browsers used to test the site include:
 
 - I used more of a BDD approach, writing small batches of code that buildd off my user stories and tested to ensure it worked before complicating it too much, especially when it came to writing JavaScript. I Used JavaScript compiler to get the basic functions correct first then with the help of stack overflow, Slack, Chat GPT and Copilot I would build on them to create the functions I needed. 
 
- 
+##### BDD Scenario 
+ - Feature: Move bad mole
+
+- Scenario: points scoring
+
+- Given the bad mole is moving in game
+- When the user clicks on the mole
+- then a point will increase each time. 
+
 
 - I also tested the game out on family members and friends to get their feedback which was all positive. 
 
