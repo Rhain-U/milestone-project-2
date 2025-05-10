@@ -58,7 +58,21 @@ The site is aimed at children ages 6-10 and its purpose is to help build on hand
 
 I have relied on these user stories to build the fundamentals of the game and keep on track of the end goals and to ensure that I have met all criteria. 
 
- 
+#### Client Goal examples
+
+![screenshot of example client goal 1, "Ability to clearly understand the main aim of the game"](/assets/documentation/menu-screen.jpg)
+
+- This example clearly shows the rules of the game in a fun, inviting font that attracts all ages. 
+
+![screenshot of example client goal 2, "Ability to clearly understand the main aim of the game"](/assets/documentation/responsive.jpg)
+
+- I used Responsive to demonstrate that the game can be played on all screen sizes. I have also tested this game on my mobile device and it works great.
+
+![screenshot of example client goal 3, "Ability to clearly understand which mole to hit and know when it has been hit"](/assets/documentation/game-screen.jpg)
+
+#### Returning Client Goals examples
+
+![screenshot of example client goal 2 & 3, "Ability to clearly understand the main aim of the game"](/assets/documentation/results-screen.jpg)
 
 ## 2. Design 
 
@@ -480,7 +494,7 @@ The browsers used to test the site include:
 
  
 
-- I used more of a BDD approach, writing small batches of code and testing to ensure it worked before complicating it too much, especially when it came to writing JavaScript. I Used JavaScript compiler to get the basic functions correct first then with the help of stack overflow, Slack, Chat GPT and Copilot I would build on them to create the functions I needed. 
+- I used more of a BDD approach, writing small batches of code that buildd off my user stories and tested to ensure it worked before complicating it too much, especially when it came to writing JavaScript. I Used JavaScript compiler to get the basic functions correct first then with the help of stack overflow, Slack, Chat GPT and Copilot I would build on them to create the functions I needed. 
 
  
 
