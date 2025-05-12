@@ -479,7 +479,7 @@ The browsers used to test the site include:
 
  
 
-- I used more of a BDD approach, writing small batches of code that buildd off my user stories and tested to ensure it worked before complicating it too much, especially when it came to writing JavaScript. I Used JavaScript compiler to get the basic functions correct first then with the help of stack overflow, Slack, Chat GPT and Copilot I would build on them to create the functions I needed. 
+- I used more of a BDD approach, writing small batches of code that build off my user stories and tested to ensure it worked before complicating it too much, especially when it came to writing JavaScript. I Used JavaScript compiler to get the basic functions correct first then with the help of stack overflow, Slack, Chat GPT and Copilot I would build on them to create the functions I needed. I chose the BDD method this time due to the size of the project being quite small. 
 
 ##### BDD Scenario 
  - Feature: Move bad mole
